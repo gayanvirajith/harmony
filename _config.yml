@@ -5,7 +5,6 @@ pygments: true
 baseurl: /harmony
 # Site URL
 url: http://webcreate.lk/harmony
-lsi: false
 exclude:
   - CNAME
   - Gemfile
