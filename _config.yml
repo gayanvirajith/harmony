@@ -5,7 +5,12 @@ pygments: true
 baseurl: /harmony
 # Site URL
 url: http://webcreate.lk/harmony
-exclude: [CNAME, Gemfile, Rakefile, README.md, .gitignore]
+exclude: 
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
 
 # Harmony theme configuration. Please change accordingly.
 #harmony:
