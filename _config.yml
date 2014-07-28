@@ -25,7 +25,7 @@ harmony:
   google_analytics_key: UA-xxxx-x
 
   # Profile links, leave blank to ignore
-  social:
+  social: 
     github: gayanvirajith
     twitter: gayanvirajith
     facebook: gayanvirajith
