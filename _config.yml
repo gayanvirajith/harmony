@@ -15,9 +15,9 @@ exclude:
 # Harmony theme configuration. Please change accordingly.
 harmony:
   name: Harmony #Name of your site
-#  description: Harmony is free responsive jekyll theme. # Little description about your site
-#  author: # Author details
-#    name: Gayan Virajith
+  description: Harmony is free responsive jekyll theme. # Little description about your site
+  author: # Author details
+    name: Gayan Virajith
 #    email: gayanvirajith@gmail.com
 #    url: http://gayanvirajith.github.io
 
