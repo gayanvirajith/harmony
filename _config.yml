@@ -13,8 +13,8 @@ exclude:
   - .gitignore
 
 # Harmony theme configuration. Please change accordingly.
-#harmony:
-#  name: Harmony #Name of your site
+harmony:
+  name: Harmony #Name of your site
 #  description: Harmony is free responsive jekyll theme. # Little description about your site
 #  author: # Author details
 #    name: Gayan Virajith
