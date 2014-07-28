@@ -24,7 +24,7 @@ harmony:
   # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-xxxx-x
 
-  # Profile links on the left sidebar, leave blank to ignore
+  # Profile links, leave blank to ignore
   social:
     github: gayanvirajith
     twitter: gayanvirajith
