@@ -5,25 +5,25 @@ pygments: true
 baseurl: /harmony
 # Site URL
 url: http://webcreate.lk/harmony
-exclude: [CNAME, Gemfile, Rakefile, README.md, .gitignore]
+#exclude: [CNAME, Gemfile, Rakefile, README.md, .gitignore]
 
 # Harmony theme configuration. Please change accordingly.
-harmony:
-  name: Harmony #Name of your site
-  description: Harmony is free responsive jekyll theme. # Little description about your site
-  author: # Author details
-    name: Gayan Virajith
-    email: gayanvirajith@gmail.com
-    url: http://gayanvirajith.github.io
+#harmony:
+#  name: Harmony #Name of your site
+#  description: Harmony is free responsive jekyll theme. # Little description about your site
+#  author: # Author details
+#    name: Gayan Virajith
+#    email: gayanvirajith@gmail.com
+#    url: http://gayanvirajith.github.io
 
   # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-xxxx-x
+#  google_analytics_key: UA-xxxx-x
 
   # Profile links on the left sidebar, leave blank to ignore
-  social:
-    github: gayanvirajith
-    twitter: gayanvirajith
-    facebook: gayanvirajith
-    gplus: 110552447039675960964
-    dribble: gayanvirajith
-    pinterest: gayanvirajith
+#  social:
+#    github: gayanvirajith
+#    twitter: gayanvirajith
+#    facebook: gayanvirajith
+#    gplus: 110552447039675960964
+#    dribble: gayanvirajith
+#    pinterest: gayanvirajith
