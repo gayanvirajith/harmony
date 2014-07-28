@@ -1,6 +1,6 @@
 # Harmony Jekyll theme general configuration 
 markdown: redcarpet
-highlighter: true
+pygments: true
 # Base URL
 baseurl: /harmony
 # Site URL
