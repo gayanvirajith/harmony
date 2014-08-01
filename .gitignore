@@ -2,4 +2,5 @@ _site/
 .DS_Store
 .*.swp
 .idea
+*~
 Gemfile.lock
