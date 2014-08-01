@@ -14,7 +14,7 @@ exclude:
 
 # Sass conversion configs
 sass:
-    sass_dir: _sass
+    sass_dir: _includes/css/_sass
     style: :compressed
 
 # Harmony theme configuration. Please change accordingly.
