@@ -2,5 +2,6 @@ _site/
 .DS_Store
 .*.swp
 .idea
+.sass-cache/
 *~
 Gemfile.lock
