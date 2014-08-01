@@ -8,8 +8,17 @@
 
         <!-- Harmony styles -->
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/all.css">
+
+        <!-- Modernizr js -->
+        <script src="{{ site.baseurl }}/assets/js/modernizr.js"></script>    
     </head>
     <body>
           {{ content }}          
     </body>
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- When no internet load JQuery from local -->
+    <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/assets/js/jquery.min.js"><\/script>')</script>
+    <!-- Site js -->
+    <script src="{{ site.baseurl }}/assets/js/all.js"></script>
 </html>
