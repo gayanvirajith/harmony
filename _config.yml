@@ -12,6 +12,11 @@ exclude:
   - README.md
   - .gitignore
 
+# Sass conversion configs
+sass:
+    sass_dir: _sass
+    style: :compressed
+
 # Harmony theme configuration. Please change accordingly.
 harmony:
   name: Harmony #Name of your site
