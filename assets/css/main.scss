@@ -7,8 +7,28 @@
 // Import layout mixin
 @import "partials/layout";
 
+/* -------------------------------- 
+
+ Primary style
+
+-------------------------------- */
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  @include box-sizing(border-box);
+}
+
 body {
-    font-family: $primary-font;
+  font: {
+    size: 100%;
+    family: $primary-font; // variables inside partials > _variables.scss
+  }
+  color: $color-black;
+  background-color: $color-white;
 }
 
 .wc-container {
