@@ -1,6 +1,11 @@
 ---
 ---
+// Import bourbon - http://bourbon.io
+@import "bourbon/bourbon";
+
+// Import reset 
 @import "reset.css";
+
 // Import colors, fonts etc...
 @import "partials/variables";
 
