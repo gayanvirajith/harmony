@@ -1,11 +1,27 @@
 ---
 ---
 @import "reset.css";
+// Import colors, fonts etc...
 @import "partials/variables";
+
+// Import layout mixin
+@import "partials/layout";
 
 
 body {
-    background: $color-1; 
+    font-family: $primary-font;
+}
+
+.wc-container {
+    width: 90%;
+    max-width: $M; // see breakpoints in _sass/partials/_layout.scss
+    margin: 0 auto;
+
+    &::after { /* Clearfix */
+        content: '';
+        display: table;
+        clear: both;
+    }
 }
 
 
