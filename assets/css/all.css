@@ -1,10 +1,4 @@
 ---
-layout: nil
 ---
 
-
-@import "partials/variables";
-
-body {
-    color: $color-1;
-}
+{% include css/reset.css %}
