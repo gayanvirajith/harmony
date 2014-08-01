@@ -4,4 +4,5 @@ _site/
 .idea
 .sass-cache/
 *~
+bourbon/
 Gemfile.lock
