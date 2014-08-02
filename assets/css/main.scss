@@ -4,6 +4,8 @@
 // Import reset 
 @import "reset.css";
 
+@import "syntax.css";
+
 // Import colors, fonts etc...
 @import "partials/variables";
 
@@ -162,11 +164,30 @@ body {
   div.page-content {
     @extend .default-page-content;
   }    
+
+  div.page-content {
+    ul { 
+      @include font-size(12px);
+      li {
+        color: $color-2; 
+        line-height: 1.6;
+        background: url(./images/bullet.svg) no-repeat 0 5px;
+        padding: 0 0 5px 15px;
+        margin-left: 0;
+      }
+      @include MQ(M){
+        @include font-size(14px);
+        li { 
+          line-height: 1.5;
+          background-position: 0 7px; 
+        }
+      }
+    }
+  }
 }
 
 body.theme-base-01 {
-  color: inherit;
-
+  
   a {
     @extend .default-anchor;   
   }
