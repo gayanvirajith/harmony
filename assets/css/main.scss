@@ -33,8 +33,6 @@ body {
     size: 100%;
     family: $primary-font; // variables inside partials > _variables.scss
   }
-  color: $color-black;
-  background-color: $color-white;
 }
 
 .wc-container {
@@ -56,7 +54,7 @@ body {
 --------------------------------- */
 
 h1, h2, h3, h4, h5, h6 { 
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 h1 {
@@ -111,36 +109,84 @@ p {
   }
 }
 
+a {
+  background: transparent;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------------------
+
+ Theme base
+
+--------------------------------- */
+
+// default 
+
+a.default-anchor {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  color: $base-08;
+    
+  &:hover, &:active, &:focus {
+    @include transition(border-bottom-color .2s);
+    border-bottom-color: $base-08;
+  }
+}
+
+div.default-page-content {
+  h1, h2, h3, h4, h5, h6 { color: $base-00; }
+}
+
+body {
+  color: $color-2;
+
+  a {
+    @extend .default-anchor;   
+  }
+
+  header.main-header, footer.main-footer {
+    background-color: $base-00;
+    color: $base-07;
+  }
+
+  div.page-content {
+    @extend .default-page-content;
+  }    
+}
+
+body.theme-base-01 {
+  color: inherit;
+
+  a {
+    @extend .default-anchor;   
+  }
+
+  header.main-header, footer.main-footer {
+    background-color: $base-01;
+    color: $base-07;
+  }
+
+  div.page-content {
+    h1, h2, h3, h4, h5, h6 { color: $base-01; }
+  }    
+}
+
+
 /* --------------------------------
 
  Main Header
 
 --------------------------------- */
-header.main-header, footer.main-footer {
-  background-color: #333;
-  color: $color-white;
-}
-
-body.blue-water {
-  header.main-header, footer.main-footer {
-    background-color: #053060;
-    color: $color-white;
-  }
-}
-
-body.darken {
-  header.main-header, footer.main-footer {
-    background-color: #333;
-    color: $color-white;
-  }
-}
-
-body.redish {
-  header.main-header, footer.main-footer {
-    background-color: #ac4142;
-    color: $color-white;
-  }
-}
 
 header.main-header { 
   padding: 2em 0;
@@ -150,8 +196,30 @@ footer.main-footer {
   padding: 1em 0;
   @include MQ(M) { padding: 2em 0; }
 }
-
 .page-content {
   padding: 1em 0;
   @include MQ(M) { padding: 2em 0; }
+}
+
+
+/* ---------------------------------
+
+  Blockquote
+
+---------------------------------- */
+/* Quotes */
+blockquote {
+  padding: .5rem 1rem;
+  margin: .8rem 0;
+  color: #7a7a7a;
+  border-left: .25rem solid #e5e5e5;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+@include MQ(M) {
+  blockquote {
+    padding-right: 5rem;
+    padding-left: 1.25rem;
+  }
 }

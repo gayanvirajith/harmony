@@ -21,7 +21,7 @@ sass:
 harmony:
   name: Harmony #Name of your site
   description: Harmony is free responsive jekyll theme. # Little description about your site
-  basetheme: redish # pre defined thmes are darken, blue-water, redish.
+  basetheme: theme-base-00 # pre defined thmes are darken, blue-water, redish.
   author: # Author details
     name: Gayan Virajith
     email: gayanvirajith@gmail.com

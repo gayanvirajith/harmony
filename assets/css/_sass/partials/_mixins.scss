@@ -15,3 +15,11 @@
  	-moz-box-sizing: $box;
  	box-sizing: $box;
 }
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
