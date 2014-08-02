@@ -117,8 +117,29 @@ p {
 
 --------------------------------- */
 header.main-header, footer.main-footer {
-  background-color: #666;
+  background-color: #333;
   color: $color-white;
+}
+
+body.blue-water {
+  header.main-header, footer.main-footer {
+    background-color: #053060;
+    color: $color-white;
+  }
+}
+
+body.darken {
+  header.main-header, footer.main-footer {
+    background-color: #333;
+    color: $color-white;
+  }
+}
+
+body.redish {
+  header.main-header, footer.main-footer {
+    background-color: #ac4142;
+    color: $color-white;
+  }
 }
 
 header.main-header { 
