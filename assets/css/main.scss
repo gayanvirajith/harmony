@@ -1,13 +1,14 @@
 ---
 ---
-// Import bourbon - http://bourbon.io
-@import "bourbon/bourbon";
 
 // Import reset 
 @import "reset.css";
 
 // Import colors, fonts etc...
 @import "partials/variables";
+
+// Import custom mixins
+@import "partials/mixins";
 
 // Import layout mixin
 @import "partials/layout";
