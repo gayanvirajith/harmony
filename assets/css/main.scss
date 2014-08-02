@@ -171,7 +171,9 @@ body {
       li {
         color: $color-2; 
         line-height: 1.6;
-        background: url(./images/bullet.svg) no-repeat 0 5px;
+        background: url(./images/bullet.svg);
+        background-repeat: no-repeat;
+        background-position: 0 5px;
         padding: 0 0 5px 15px;
         margin-left: 0;
       }
