@@ -31,7 +31,16 @@
         </script>
     </head>
     <body>
-          {{ content }}          
+        <header class="main-header">
+            <div class="wc-container">
+                <h1>{{ site.harmony.name }}</h1>
+                <h2>{{ site.harmony.description }}</h2>
+            </div>
+        </header>
+        {{ content }}
+        <footer class="main-footer">
+            <p class="wc-container">Licensed under cc.</p>
+        </footer>
     </body>
     <!-- jQuery -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
