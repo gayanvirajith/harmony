@@ -185,6 +185,7 @@ body {
   div.page-content {
     ul { 
       @include font-size(12px);
+      padding: 1em 0;
       li {
         color: $color-2; 
         line-height: 1.6;
@@ -201,6 +202,57 @@ body {
           background-position: 0 7px; 
         }
       }
+    }
+    ol { 
+      @include font-size(12px);
+      padding-top: 1em;
+      padding-bottom: 1em;
+      list-style: decimal;
+      margin-left: 0;
+      li {
+        color: $color-2; 
+        line-height: 1.6;
+        padding: 0 0 5px 0px;
+        margin-left: 20px;
+        position:relative;
+      }
+      @include MQ(M){
+        @include font-size(14px);
+        li { 
+          line-height: 1.5;
+          background-position: 0 7px; 
+        }
+      }
+    }
+
+    dl {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      @include font-size(12px);
+      
+      dt, dd {
+        line-height: 1.5;        
+      }
+      
+      dt {
+        font-weight: bold;
+        padding-bottom: 1em;
+      }
+
+      dd {
+        margin-left: 0;
+      }
+
+      @include MQ(M) {
+        @include font-size(14px);
+        dt, dd {
+          line-height: 1.6;        
+        }
+      }
+    }
+    
+    img { 
+      padding: 1em 0;
     }
   }
 }
@@ -315,11 +367,44 @@ pre {
   }
 }
 
+/* Gist via GitHub Pages */
+.gist .gist-file {
+  font-family: Menlo, Monaco, "Courier New", monospace !important;
+  margin: 1em 0;
+}
+.gist .markdown-body {
+  padding: 15px;
+}
+.gist pre {
+  padding: 0;
+  background-color: transparent;
+}
+.gist .gist-file .gist-data {
+  font-size: 12px;
+  @include MQ(M) {
+    font-size: 14px !important;
+  }
+  line-height: 1.4;
+}
+.gist code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
+
 /* --------------------------------
 
 Post styles
 
 --------------------------------- */
+
+div.posts {
+
+  .div.post {
+    
+  }
+}
 div.post {
   padding-top: .5rem;
   padding-bottom: 1rem;
@@ -391,7 +476,7 @@ span.post-date {
     height: 80px;
   }
 
-  .column-1, .column-2, .column-3 {    
+  .column-1, .column-2, .column-3, .column-full {    
     padding-top: 10px;
     @include MQ(M) {
       padding-top: 30px;
@@ -417,4 +502,29 @@ span.post-date {
     text-align: right;
     @include column(.3333);
   }
+  .column-full {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* -----------------------------------
+
+  Table
+
+----------------------------------- */
+table {
+  margin: 1em 0;
+  width: 100%;
+  border: 1px solid $base-04;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid $base-04;
+}
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: $base-05;
 }

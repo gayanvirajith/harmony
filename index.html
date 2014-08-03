@@ -12,11 +12,16 @@ title: Harmony
 			      </a>
     			</h3>
 
-    			<span class="post-date">{{ post.date | date_to_string }}</span>
-
-    			{{ post.content }}
+    			<span class="post-date">{{ post.date | date_to_string }}</span>    			
+  				<p>
+	  				{{ post.description }}	
+  				</p>
   			</div>
   		{% endfor %}
+	</div>
+
+	<div class="post-footer">
+		<div class="column-full"><a href="{{ site.baseurl }}/blog/">Blog archive</a></div>
 	</div>
 </div>
 
