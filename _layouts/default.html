@@ -33,13 +33,15 @@
     <body class="{{ site.harmony.basetheme }}">
         <header class="main-header">
             <div class="wc-container">
-                <h1>{{ site.harmony.name }}</h1>
+                <h1><a href="{{ site.baseurl }}">{{ site.harmony.name }}</a></h1>
                 <h2>{{ site.harmony.description }}</h2>
             </div>
         </header>
         {{ content }}
         <footer class="main-footer">
-            <p class="wc-container">Licensed under <a href="#0">CC</a>.</p>
+            <p class="wc-container">
+                {% include footer.html %}
+            </p>
         </footer>
     </body>
     <!-- jQuery -->

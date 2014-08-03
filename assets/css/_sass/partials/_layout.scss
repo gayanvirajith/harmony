@@ -25,7 +25,7 @@ $L:     1170px;
 }
 
 // container grid system
-/*@mixin column($percentage, $float-direction:left) {
+@mixin column($percentage, $float-direction:left) {
   width: 100% * $percentage;
   float: $float-direction;
-}*/
+}

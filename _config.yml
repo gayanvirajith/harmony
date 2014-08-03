@@ -11,6 +11,8 @@ exclude:
   - Rakefile
   - README.md
   - .gitignore
+  - .sass-cache
+  - Gemfile.lock
 
 # Sass conversion configs
 sass:
@@ -38,3 +40,5 @@ harmony:
     gplus: +GayanVirajith
     dribble: gayanvirajith
     pinterest: gayanvirajith
+  # Toggle disclaimer in footer
+  show_disclaimer: true

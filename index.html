@@ -3,20 +3,20 @@ layout: default
 title: Harmony
 ---
 <div id="home" class="page-content wc-container">
-	<h3>Harmony is still under work in progress. Please wait...</h3>
-	<p>
-		Hello world
-		<a href="#0">A link</a>
-	</p>
+	<div class="posts">
+  		{% for post in site.posts %}
+  			<div class="post">
+    			<h3 class="post-title">
+			      <a href="{{ post.url }}">
+			        {{ post.title }}
+			      </a>
+    			</h3>
 
-	<blockquote>
-		<p>
-			Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.
-		</p>
-	</blockquote>
+    			<span class="post-date">{{ post.date | date_to_string }}</span>
 
-	<ul>
-		<li>One</li>
-		<li>Two and this a <a href="#0">Link</a></li>
-	</ul>
+    			{{ post.content }}
+  			</div>
+  		{% endfor %}
+	</div>
 </div>
+

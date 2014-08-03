@@ -4,6 +4,7 @@
 // Import reset 
 @import "reset.css";
 
+// Import syntax 
 @import "syntax.css";
 
 // Import colors, fonts etc...
@@ -71,35 +72,35 @@ h2 {
   // mobile first
   @include font-size(18px);
   @include MQ(M) {
-    @include font-size(28px);
+    @include font-size(34px);
   }
 }
 
 h3 {
   @include font-size(15px);
   @include MQ(M) {
-    @include font-size(25px);
+    @include font-size(30px);
   }
 }
 
 h4 {
   @include font-size(16px);
   @include MQ(M) {
-    @include font-size(22px);
+    @include font-size(24px);
   }
 }
 
 h5 {
   @include font-size(14px);
   @include MQ(M) {
-    @include font-size(18px);
+    @include font-size(22px);
   }
 }
 
 h6 {
   @include font-size(14px);
   @include MQ(M) {
-    @include font-size(15px);
+    @include font-size(19px);
   }
 }
 
@@ -107,7 +108,7 @@ p {
   line-height: 1.6;
   @include font-size(12px);
   @include MQ(M) {
-    @include font-size(14px);
+    @include font-size(18px);
   }
 }
 
@@ -159,6 +160,22 @@ body {
   header.main-header, footer.main-footer {
     background-color: $base-00;
     color: $base-07;
+
+    p {
+      @include font-size(12px);
+      @include MQ(M) {
+        @include font-size(14px);        
+      }
+    }
+  }
+
+  header.main-header {
+    a { 
+      color: $color-white;
+      &:hover, &:active, &:focus {
+        border-bottom-color: transparent;
+      }
+    }
   }
 
   div.page-content {
@@ -188,6 +205,7 @@ body {
   }
 }
 
+// Theme base 01
 body.theme-base-01 {
   
   a {
@@ -201,6 +219,10 @@ body.theme-base-01 {
 
   div.page-content {
     h1, h2, h3, h4, h5, h6 { color: $base-01; }
+    h3 a {
+      color: $base-01;
+      &:hover, &:active, &:focus {border-bottom-color: $base-01;} 
+    }
   }    
 }
 
@@ -230,7 +252,6 @@ footer.main-footer {
   Blockquote
 
 ---------------------------------- */
-/* Quotes */
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
@@ -244,5 +265,156 @@ blockquote p:last-child {
   blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
+  }
+}
+
+/* --------------------------------
+
+Code snippets
+
+--------------------------------- */
+code, pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+code {  
+  padding: .25em .5em;
+  font-size: 85%;
+  color: $base-08;
+  background-color: rgba($base-08, .1);
+}
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  @include font-size(12px);
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: $color-white;
+  border: 1px solid $base-05;
+  code {
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+    background-color: transparent;
+  }
+
+  @include MQ(M) {
+    @include font-size(14px);
+  }
+}
+
+.highlight {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  pre {
+    margin-bottom: 0;
+  }
+}
+
+/* --------------------------------
+
+Post styles
+
+--------------------------------- */
+div.post {
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+
+  @include MQ(M) {
+
+    padding-bottom: 2rem;  
+  }
+}
+span.post-date {
+  line-height: 1.6;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  @include font-size(12px);
+  overflow: hidden;
+  display: block;
+  padding: 1em 0;
+}
+
+/* --------------------------------
+
+ Related post
+
+--------------------------------- */
+.related {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid $base-05;
+
+  @include MQ(M) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts li small {
+  font-size: 75%;
+  color: #999;
+}
+.related-posts li a:hover {
+  color: #268bd2;
+  text-decoration: none;
+}
+.related-posts li a:hover small {
+  color: inherit;
+}
+
+/* --------------------------------
+
+ Post footer
+
+--------------------------------- */
+.post-footer {
+  
+  border-top: 1px solid $base-05;
+  border-bottom: 1px solid $base-05;
+  height: 40px;
+  display: table;
+  width: 100%;
+  position: relative;
+
+  @include MQ(M) {    
+    height: 80px;
+  }
+
+  .column-1, .column-2, .column-3 {    
+    padding-top: 10px;
+    @include MQ(M) {
+      padding-top: 30px;
+    }
+    span { color: $base-04; }
+    a,span {
+      @include font-size(12px);
+      @include MQ(M) {
+        @include font-size(16px);        
+      }
+    }
+  }
+
+  .column-1 {
+    text-align: left;
+    @include column(.3333);
+  }
+  .column-2 {
+    text-align: center;
+    @include column(.3333);
+  }
+  .column-3 {
+    text-align: right;
+    @include column(.3333);
   }
 }
