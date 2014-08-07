@@ -50,6 +50,15 @@ body {
     }
 }
 
+.wc-img-replace { /* replace text with a background-image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 /* --------------------------------
 
  Small Typography
@@ -161,7 +170,7 @@ body {
     background-color: $base-00;
     color: $base-07;
 
-    p {
+    p,address {
       @include font-size(12px);
       @include MQ(M) {
         @include font-size(14px);        
@@ -174,6 +183,121 @@ body {
       color: $color-white;
       &:hover, &:active, &:focus {
         border-bottom-color: transparent;
+      }
+    }
+  }
+
+  footer.main-footer {
+    .column {
+      float:left;
+      
+      &:nth-child(1) {
+        @include column(1);
+      }
+      &:nth-child(2) {
+        @include column(1)
+      }
+
+      @include MQ(M) {
+        &:nth-child(1) {
+          @include column(.5);
+        }
+        &:nth-child(2) {
+          @include column(.5);
+        }
+      }
+    }
+
+    h6 {
+        position: relative;
+        padding: 10px 0;
+        text-transform: uppercase;
+    }
+    h6::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 2rem;
+        height: 2px;
+        background: $base-07;
+        overflow: hidden;
+    } 
+
+    ul.menu {
+      padding: 0 0 10px 0;
+      li {
+        line-height: 1.4;
+        @include MQ(M) {
+          line-height: 1.6;
+        }
+      }
+    }
+
+    p.disclaimer {
+      text-align: center;
+    }
+
+   ul.social-media {
+    text-align:left;
+    padding: 0 0 10px 0;
+    li { display:inline-block;}
+      li > a {
+        width: 32px;
+        height: 32px;
+        background-color: $base-07;
+        background-image: url("./images/socials-icons.svg");
+        background-size: 224px 64px;
+        border-radius: 0.25em;
+        @include transition(background-color 0.2s);
+        border-bottom-color: transparent;
+      }
+        
+      li a.twitter {
+        background-position: 0 0;
+          &:hover {
+            background-position: 0 -32px;
+            background-color: $color-2;
+        } 
+      }
+
+      li a.github {
+        background-position: -32px 0;
+        &:hover {
+          background-position: -32px -32px;
+          background-color: $color-2;
+        }
+      }
+
+      li a.facebook {
+        background-position: -64px 0;
+        &:hover {
+          background-position: -64px -32px;
+          background-color: $color-2
+        }
+      }
+
+      li a.dribble {
+        background-position: -96px 0;
+        &:hover {
+          background-position: -96px -32px;
+          background-color: $color-2
+        }
+      }
+
+      li a.google {
+        background-position: -128px 0;
+        &:hover {
+          background-position: -128px -32px;
+            background-color: $color-2
+        }
+      }
+
+      li a.pinterest {
+        background-position: -196px 0;
+        &:hover {
+          background-position: -196px -32px;
+          background-color: $color-2
+        }
       }
     }
   }
@@ -256,6 +380,8 @@ body {
     }
   }
 }
+
+
 
 // Theme base 01
 body.theme-base-01 {

@@ -39,7 +39,15 @@
         </header>
         {{ content }}
         <footer class="main-footer">
-            <p class="wc-container">
+            <div class="wc-container">
+                <div class="column">
+                    {% include footer-links.html %}                    
+                </div>
+                <div class="column">
+                    {% include social.html %}
+                </div>
+            </div>
+            <p class="wc-container disclaimer">
                 {% include footer.html %}
             </p>
         </footer>
