@@ -8,7 +8,7 @@ title: Blog archive
     {% for post in site.posts %}
       <li>
 	      <span>{{ post.date | date_to_string }} &raquo;</span>
-	      <a href="{{ baseurl }}{{ post.url }}">{{ post.title }}</a>
+	      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>
