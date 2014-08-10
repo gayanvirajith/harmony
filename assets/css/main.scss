@@ -435,6 +435,10 @@ body.theme-base-01 {
     color: $base-07;
   }
 
+  header.main-header {
+    h1 a { color: $base-07;}
+  }
+
   div.page-content {
     h1, h2, h3, h4, h5, h6 { color: $base-01; }
     h3 a {
