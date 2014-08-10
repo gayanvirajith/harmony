@@ -430,13 +430,15 @@ body.theme-base-01 {
     @extend .default-anchor;   
   }
 
-  header.main-header, footer.main-footer {
+  footer.main-footer {
     background-color: $base-01;
     color: $base-07;
   }
 
   header.main-header {
-    h1 a { color: $base-07;}
+
+    h1 a { color: $base-01;}
+    h2 { color: $base-01; }
   }
 
   div.page-content {
