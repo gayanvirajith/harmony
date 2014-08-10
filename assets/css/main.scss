@@ -73,7 +73,7 @@ h1 {
   // mobile first
   @include font-size(20px);
   @include MQ(M) {
-    @include font-size(40px);
+    @include font-size(36px);
   }
 }
 
@@ -81,7 +81,7 @@ h2 {
   // mobile first
   @include font-size(18px);
   @include MQ(M) {
-    @include font-size(34px);
+    @include font-size(31px);
   }
 }
 
@@ -167,9 +167,6 @@ body {
   }
 
   header.main-header, footer.main-footer {
-    background-color: $base-00;
-    color: $base-07;
-
     p,address {
       @include font-size(12px);
       @include MQ(M) {
@@ -179,15 +176,58 @@ body {
   }
 
   header.main-header {
+    border-top: 2px $base-00 solid;
+    h1, h2 { text-align: center; }
     a { 
-      color: $color-white;
+      color: $base-00;
       &:hover, &:active, &:focus {
         border-bottom-color: transparent;
+      }
+    }
+
+    ul {
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+    }
+    ul li { 
+      display: inline-block;
+      position:relative;
+      margin-left: 15px;
+      &:before {
+        position:absolute;
+        content: "/";
+        left: -15px;
+
+        color: $base-08;
+      }
+      &:before:first {
+        content: "";
+      }
+
+      &:first-child:before {
+        content: "";
+      }
+    }
+
+    ul li a { 
+      display:block;
+      color: $base-08;
+      border-bottom: 2px transparent solid;
+      padding-bottom:5px;
+      @include transition(all, .2s);
+      @include MQ(M) {
+        @include font-size(18px);
+      }
+      &:hover, &:focus, &:active {
+        border-bottom-color: $base-08;
       }
     }
   }
 
   footer.main-footer {
+    background-color: $base-00;
+    color: $base-07;
     .column {
       float:left;
       
@@ -256,7 +296,7 @@ body {
         background-position: 0 0;
           &:hover {
             background-position: 0 -32px;
-            background-color: $color-2;
+            background-color: $base-08;
         } 
       }
 
@@ -264,7 +304,7 @@ body {
         background-position: -32px 0;
         &:hover {
           background-position: -32px -32px;
-          background-color: $color-2;
+          background-color: $base-08;
         }
       }
 
@@ -272,7 +312,7 @@ body {
         background-position: -64px 0;
         &:hover {
           background-position: -64px -32px;
-          background-color: $color-2
+          background-color: $base-08;
         }
       }
 
@@ -280,7 +320,7 @@ body {
         background-position: -96px 0;
         &:hover {
           background-position: -96px -32px;
-          background-color: $color-2
+          background-color: $base-08;
         }
       }
 
@@ -288,7 +328,7 @@ body {
         background-position: -128px 0;
         &:hover {
           background-position: -128px -32px;
-            background-color: $color-2
+            background-color: $base-08;
         }
       }
 
@@ -296,7 +336,7 @@ body {
         background-position: -196px 0;
         &:hover {
           background-position: -196px -32px;
-          background-color: $color-2
+          background-color: $base-08;
         }
       }
     }
