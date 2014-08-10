@@ -580,10 +580,14 @@ div.posts {
 div.post {
   padding-top: .5rem;
   padding-bottom: 1rem;
-
+  border-bottom: 1px $base-05 solid;
   @include MQ(M) {
 
     padding-bottom: 2rem;  
+  }
+
+  &:last-child {
+    border-bottom: none;
   }
 }
 span.post-date {
