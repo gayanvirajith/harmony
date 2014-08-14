@@ -190,7 +190,7 @@ body {
       text-align: center;
       padding: 15px;
     }
-    ul li { 
+    ul li {       
       display: inline-block;
       position:relative;
       margin-left: 15px;
@@ -198,7 +198,6 @@ body {
         position:absolute;
         content: "/";
         left: -15px;
-
         color: $base-08;
       }
       &:before:first {
@@ -264,11 +263,14 @@ body {
     } 
 
     ul.menu {
-      padding: 0 0 10px 0;
+      padding: 0 0 1em 0;
       li {
-        line-height: 1.4;
+        @include font-size(12px);
+        line-height: 1.6;
+        display: inline;
+        padding-right: 10px;        
         @include MQ(M) {
-          line-height: 1.6;
+          @include font-size(16px);          
         }
       }
     }
@@ -348,9 +350,10 @@ body {
 
   div.page-content {
     ul { 
-      @include font-size(12px);
+      
       padding: 1em 0;
       li {
+        @include font-size(12px);
         color: $color-2; 
         line-height: 1.6;
         background: url(./images/bullet.svg);
@@ -359,9 +362,9 @@ body {
         padding: 0 0 5px 15px;
         margin-left: 0;
       }
-      @include MQ(M){
-        @include font-size(14px);
-        li { 
+      @include MQ(M){        
+        li {         
+          @include font-size(16px);  
           line-height: 1.5;
           background-position: 0 7px; 
         }
@@ -377,11 +380,11 @@ body {
         color: $color-2; 
         line-height: 1.6;
         padding: 0 0 5px 0px;
-        margin-left: 20px;
+        margin-left: 2em;
         position:relative;
       }
       @include MQ(M){
-        @include font-size(14px);
+        @include font-size(16px);
         li { 
           line-height: 1.5;
           background-position: 0 7px; 
@@ -392,24 +395,25 @@ body {
     dl {
       padding-top: 1em;
       padding-bottom: 1em;
-      @include font-size(12px);
+      
       
       dt, dd {
+        @include font-size(12px);  
         line-height: 1.5;        
       }
       
       dt {
         font-weight: bold;
-        padding-bottom: 1em;
+        padding-bottom: 5px;
       }
 
       dd {
-        margin-left: 0;
+        padding-bottom: 20px;
       }
 
-      @include MQ(M) {
-        @include font-size(14px);
+      @include MQ(M) {        
         dt, dd {
+          @include font-size(16px);
           line-height: 1.6;        
         }
       }
