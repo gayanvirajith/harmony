@@ -13,4 +13,5 @@ Work in progress...
 - [x] Normal pages
 - [ ] Pagination
 - [ ] Theme patterns
+- [ ] Proper documentation
 
