@@ -176,7 +176,7 @@ body {
   }
 
   header.main-header {
-    border-top: 2px $base-00 solid;
+    border-top: 5px $base-00 solid;
     h1, h2 { text-align: center; }
     a { 
       color: $base-00;
@@ -462,8 +462,8 @@ body.theme-base-01 {
 --------------------------------- */
 
 header.main-header { 
-  padding: 2em 0;
-  @include MQ(M) { padding: 4em 0; }
+  padding: 1em 0;
+  @include MQ(M) { padding: 2em 0; }
 }
 footer.main-footer {
   padding: 1em 0;
