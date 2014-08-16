@@ -349,8 +349,7 @@ body {
   }    
 
   div.page-content {
-    ul { 
-      
+    ul {       
       padding: 1em 0;
       li {
         @include font-size(12px);
@@ -421,6 +420,10 @@ body {
     
     img { 
       padding: 1em 0;
+    }
+
+    p {
+      margin-bottom: 1em;      
     }
   }
 }
@@ -602,6 +605,10 @@ span.post-date {
   overflow: hidden;
   display: block;
   padding: 1em 0;
+
+  @include MQ(M) {
+    @include font-size(16px);
+  }
 }
 
 /* --------------------------------
