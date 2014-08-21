@@ -136,6 +136,17 @@ img {
   height: auto;
 }
 
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+  height: 0;
+}
+
+strong { font-weight: 600; }
+
 /* --------------------------------
 
  Theme base
@@ -350,7 +361,7 @@ body {
 
   div.page-content {
     ul {       
-      padding: 1em 0;
+      padding: 0 0 1em 0;
       li {
         @include font-size(13px);
         color: $color-2; 
@@ -371,7 +382,7 @@ body {
     }
     ol { 
       @include font-size(12px);
-      padding-top: 1em;
+      // padding-top: 1em;
       padding-bottom: 1em;
       list-style: decimal;
       margin-left: 0;
@@ -392,10 +403,7 @@ body {
     }
 
     dl {
-      padding-top: 1em;
       padding-bottom: 1em;
-      
-      
       dt, dd {
         @include font-size(12px);  
         line-height: 1.5;        
@@ -404,10 +412,15 @@ body {
       dt {
         font-weight: bold;
         padding-bottom: 5px;
+        padding-top: 20px;
+      }
+
+      dt:first-child {
+        padding-top: 0px;
       }
 
       dd {
-        padding-bottom: 20px;
+        padding-left: 10px;
       }
 
       @include MQ(M) {        
@@ -424,6 +437,10 @@ body {
 
     p {
       margin-bottom: 1em;      
+    }
+
+    h1, h2, h3, h4, h5, h6 { 
+      padding-bottom: 5px;
     }
   }
 }
