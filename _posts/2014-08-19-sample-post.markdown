@@ -32,7 +32,7 @@ print_hi('Tom')
 {% endhighlight %}
 
 
-Sed ultricies nibh erat, nec cursus augue hendrerit sed. Donec neque lacus, aliquet ac purus non, consectetur faucibus metus. Duis nec purus imperdiet libero suscipit bibendum. 
+A list: 
 
 - Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc
 - Donec ante est, volutpat in mi et, pulvinar congue dolor.
@@ -40,15 +40,13 @@ Sed ultricies nibh erat, nec cursus augue hendrerit sed. Donec neque lacus, aliq
 - Duis elementum odio eu euismod suscipit.
 - Integer enim lorem, interdum sit amet consectetur non, bibendum eget neque.
 
-Sed ultricies nibh erat, nec cursus augue hendrerit sed. Donec neque lacus, aliquet ac purus non, consectetur faucibus metus. Duis nec purus imperdiet libero suscipit bibendum. 
+A numbered list: 
 
 1. Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc. 
 2. Donec ante est, volutpat in mi et, pulvinar congue dolor.
 3. Quisque ultrices pulvinar sollicitudin.
 4. Duis elementum odio eu euismod suscipit.
 5. Integer enim lorem, interdum sit amet consectetur non, bibendum eget neque.
-
-Ut bibendum porttitor luctus. Donec quam nisl, ullamcorper at sollicitudin at, aliquam sit amet dolor. Quisque blandit eu tellus at bibendum. Nam eu magna mattis, feugiat orci in, feugiat massa. 
 
 Definition list:
 
@@ -60,4 +58,4 @@ Pellentesque habitant morbi tristique senectus
 : Curabitur malesuada lacus ac gravida porttitor
 : Duis sodales feugiat lorem et mollis. 
 
-Want me to suggest something else? Please [Send me a request](https://github.com/web-create/harmony/issues/new)
+Want me to suggest something? Please [Send me a request](https://github.com/web-create/harmony/issues/new)
