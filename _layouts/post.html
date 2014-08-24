@@ -30,17 +30,17 @@ layout: default
 	<div class="post-footer">
 		<div class="column-1">
 			{% if page.previous %}
-				<a href="{{page.previous.url}}">Older</a>
+				<a href="{{page.previous.url}}"><< Older</a>
 			{% else %}
-				<span>Older</span>
+				<span><< Older</span>
 			{% endif %}
 		</div>
 		<div class="column-2"><a href="{{ site.baseurl }}/">Home</a></div>
 		<div class="column-3">
 			{% if page.next %}
-				<a href="{{ page.next.url }}">Newer</a>
+				<a href="{{ page.next.url }}">Newer >></a>
 			{% else %}
-				<span>Newer</span>
+				<span>Newer >></span>
 			{% endif %}
 		</div>
 	</div>
