@@ -156,14 +156,15 @@ strong { font-weight: 600; }
 // default 
 
 a.default-anchor {
+  
   text-decoration: none;
   border-bottom: 1px solid transparent;
   color: $base-08;
-    
   &:hover, &:active, &:focus {
     @include transition(border-bottom-color .2s);
     border-bottom-color: $base-08;
   }
+
 }
 
 div.default-page-content {
@@ -174,7 +175,7 @@ body {
   color: $color-2;
 
   a {
-    @extend .default-anchor;   
+    @extend .default-anchor;
   }
 
   header.main-header, footer.main-footer {
@@ -187,10 +188,12 @@ body {
   }
 
   header.main-header {
+    color: $base-00;
     border-top: 5px $base-00 solid;
-    h1, h2 { text-align: center; }
+
+    h1, h2 { text-align: center; color: inherit;}
     a { 
-      color: $base-00;
+      color: inherit;
       &:hover, &:active, &:focus {
         border-bottom-color: transparent;
       }
@@ -205,11 +208,11 @@ body {
       display: inline-block;
       position:relative;
       margin-left: 15px;
+      color: $base-08;
       &:before {
         position:absolute;
         content: "/";
         left: -15px;
-        color: $base-08;
       }
       &:before:first {
         content: "";
@@ -222,7 +225,7 @@ body {
 
     ul li a { 
       display:block;
-      color: $base-08;
+      color: inherit;
       border-bottom: 2px transparent solid;
       padding-bottom:5px;
       @include transition(all, .2s);
@@ -230,7 +233,7 @@ body {
         @include font-size(18px);
       }
       &:hover, &:focus, &:active {
-        border-bottom-color: $base-08;
+        border-bottom-color: inherit;
       }
     }
   }
@@ -294,64 +297,62 @@ body {
     text-align:left;
     padding: 0 0 10px 0;
     li { display:inline-block;}
-      li > a {
-        width: 32px;
-        height: 32px;
-        background-color: $base-07;
-        background-image: url("./images/socials-icons.svg");
-        background-size: 224px 64px;
-        border-radius: 0.25em;
-        @include transition(background-color 0.2s);
-        border-bottom-color: transparent;
-      }
-        
-      li a.twitter {
-        background-position: 0 0;
-          &:hover {
-            background-position: 0 -32px;
-            background-color: $base-08;
-        } 
-      }
+    li > a {
+      width: 32px;
+      height: 32px;
+      background-color: $base-07;
+      background-image: url("./images/socials-icons.svg");
+      background-size: 224px 64px;
+      border-radius: 0.25em;
+      @include transition(background-color 0.2s);
+      border-bottom-color: transparent;
 
-      li a.github {
-        background-position: -32px 0;
-        &:hover {
-          background-position: -32px -32px;
-          background-color: $base-08;
-        }
+      &:hover {
+        background-color: $base-08;
       }
+    }
+      
+    li a.twitter {
+      background-position: 0 0;
+        &:hover {
+          background-position: 0 -32px;
+      } 
+    }
 
-      li a.facebook {
-        background-position: -64px 0;
-        &:hover {
-          background-position: -64px -32px;
-          background-color: $base-08;
-        }
+    li a.github {
+      background-position: -32px 0;
+      &:hover {
+        background-position: -32px -32px;
       }
+    }
 
-      li a.dribble {
-        background-position: -96px 0;
-        &:hover {
-          background-position: -96px -32px;
-          background-color: $base-08;
-        }
+    li a.facebook {
+      background-position: -64px 0;
+      &:hover {
+        background-position: -64px -32px;
       }
+    }
 
-      li a.google {
-        background-position: -128px 0;
-        &:hover {
-          background-position: -128px -32px;
-            background-color: $base-08;
-        }
+    li a.dribble {
+      background-position: -96px 0;
+      &:hover {
+        background-position: -96px -32px;
       }
+    }
 
-      li a.pinterest {
-        background-position: -196px 0;
-        &:hover {
-          background-position: -196px -32px;
-          background-color: $base-08;
-        }
+    li a.google {
+      background-position: -128px 0;
+      &:hover {
+        background-position: -128px -32px;
       }
+    }
+
+    li a.pinterest {
+      background-position: -196px 0;
+      &:hover {
+        background-position: -196px -32px;
+      }
+    }
     }
   }
 
@@ -460,19 +461,93 @@ body.theme-base-01 {
   }
 
   header.main-header {
-
-    h1 a { color: $base-01;}
-    h2 { color: $base-01; }
+    color: $base-01;
+    ul li { 
+      color: $base-08;
+    }
   }
 
   div.page-content {
     h1, h2, h3, h4, h5, h6 { color: $base-01; }
-    h3 a {
-      color: $base-01;
-      &:hover, &:active, &:focus {border-bottom-color: $base-01;} 
-    }
-  }    
+  }
+
+
 }
+
+
+// Theme base 02
+body.theme-base-02 {
+  
+  a {
+    color: $base-0C;
+    &:hover, &:active, &:focus {
+      border-bottom-color: $base-0C;
+    }
+  }
+
+  footer.main-footer {
+    background-color: $base-02;
+    color: $base-07;
+  }
+
+  header.main-header {
+    color: $base-02;
+    border-top-color: $base-02;
+    ul li { 
+      color: $base-0C;
+      
+    }
+  }
+
+  div.page-content {
+    h1, h2, h3, h4, h5, h6 { color: $base-02; }
+  }  
+
+  ul.social-media { 
+    li > a {
+      &:hover {
+        background-color: $base-0C !important;
+      }
+    }
+  }  
+}
+
+// Theme base 03
+body.theme-base-03 {
+  
+  a { 
+    color: $base-0F;
+    &:hover, &:active, &:focus {
+      border-bottom-color: $base-0F;
+    }
+  }
+
+  footer.main-footer {
+    background-color: $base-03;
+    color: $base-07;
+  }
+
+  header.main-header {
+    color: $base-03;
+    border-top-color: $base-03;
+    ul li { 
+      color: $base-0F;      
+    }
+  }
+
+  div.page-content {
+    h1, h2, h3, h4, h5, h6 { color: $base-03; }
+  }  
+
+  ul.social-media { 
+    li > a {
+      &:hover {
+        background-color: $base-0F !important;
+      }
+    }
+  }  
+}
+
 
 
 /* --------------------------------
