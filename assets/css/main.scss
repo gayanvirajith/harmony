@@ -630,17 +630,24 @@ body.theme-base-05 {
 body.theme-base-08 {
   
   a { 
-    color: $base-01 !important;
+    color: $base-08;
     &:hover, &:active, &:focus {
-      border-bottom-color: $base-01 !important;
+      border-bottom-color: $base-08;
     }
   }
 
   footer.main-footer {
     background-color: $base-08;
-    color: $base-01;
+    color: $base-07;
     h6:before {
-      background: $base-01;
+      background: $base-07;
+    }
+
+    a { 
+      color: $base-01; 
+      &:hover, &:active, &:focus {
+        border-bottom-color: $base-01;
+      }
     }
   }
 
@@ -648,7 +655,7 @@ body.theme-base-08 {
     color: $base-01;
     border-top-color: $base-08;
     ul li { 
-      color: $base-08;      
+      color: $base-08;    
     }
   }
 
@@ -658,6 +665,7 @@ body.theme-base-08 {
 
   ul.social-media { 
     li > a {
+      border-bottom:none;
       &:hover {
         background-color: $base-01 !important;
       }
@@ -665,7 +673,52 @@ body.theme-base-08 {
   }  
 }
 
+// Theme base 09
+body.theme-base-09 {
+  
+  a { 
+    color: $base-09;
+    &:hover, &:active, &:focus {
+      border-bottom-color: $base-09;
+    }
+  }
 
+  footer.main-footer {
+    background-color: $base-09;
+    color: $base-07;
+    h6:before {
+      background: $base-07;
+    }
+
+    a { 
+      color: $base-01; 
+      &:hover, &:active, &:focus {
+        border-bottom-color: $base-01;
+      }
+    }
+  }
+
+  header.main-header {
+    color: $base-01;
+    border-top-color: $base-09;
+    ul li { 
+      color: $base-09;    
+    }
+  }
+
+  div.page-content {
+    h1, h2, h3, h4, h5, h6 { color: $base-01; }
+  }  
+
+  ul.social-media { 
+    li > a {
+      border-bottom:none;
+      &:hover {
+        background-color: $base-01 !important;
+      }
+    }
+  }  
+}
 
 /* --------------------------------
 
