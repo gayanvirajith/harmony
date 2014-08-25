@@ -6,7 +6,7 @@ Harmony is a responsive jekyll theme.
 
 Work in progress...
 
-#### Todo
+#### Todo list
 
 - [x] Main layout
 - [x] Blog page
