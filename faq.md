@@ -10,5 +10,5 @@ Why are you doing this?
 : For experience! Free resources are always good way to learn what you love, also help us to produce good digital work and it might end up being useful to someone.
 
 Well, still have something in your mind?
-: Get in touch by [email](gayanvirajith@gmail.com) or with an [issuee](https://github.com/web-create/harmony/issues/new), I am glad to response.
+: Please drop a line to [gayanvirajith@gmail.com](gayanvirajith@gmail.com) or an [issue](https://github.com/web-create/harmony/issues/new) on Github, I am glad to response.
 
