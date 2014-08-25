@@ -13,6 +13,11 @@ I am Working for [template-factory.nl][tf] also known as [Mearch ICT][m].
 I mostly prefer to serve with Php and Ruby based stacks and also love to work 
 on [Jekyll][jekyll] and [Processwire CMS/CMF][pw].
 
+### Contact me
+
+Find me on [Google+][google] / [Github][github] or just say `Hello` at 
+[gayanvirajith@gmail.com](gayanvirajith@gmail.com).
+
 
 [tf]: http://template-factory.nl
 [m]: http://mearch.com
@@ -20,3 +25,4 @@ on [Jekyll][jekyll] and [Processwire CMS/CMF][pw].
 [pwf]: http://processwire.com/talk
 [jekyll]: http://jekyllrb.com
 [github]: https://github.com/gayanvirajith
+[google]: https://plus.google.com/+GayanVirajith
