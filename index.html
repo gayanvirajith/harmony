@@ -4,7 +4,7 @@ title: Harmony
 ---
 <div id="home" class="page-content wc-container">
 	<div class="posts">
-  		{% for post in site.posts %}
+  		{% for post in site.posts limit:10 %}
   			<div class="post">
     			<h3 class="post-title">
 			      <a href="{{ site.url }}{{ post.url }}">
