@@ -16,7 +16,9 @@ layout: default
 	  				{{ post.description }}	
   				</p>
   				<p>
-  					<a href="#0">Read More</a>
+  					<a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title}}">
+  						Read More
+					</a>
   				</p>
   			</div>
   		{% endfor %}
