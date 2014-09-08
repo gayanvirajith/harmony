@@ -68,12 +68,13 @@ links for your header in the file `header-links.html`.
 
 ### Footer links
 
-Add/edit links to `_includes/footer-links.html`.
+Customize your footer links by editing `_includes/footer-links.html`
 
 ### Copyrights/Disclaimer statements
 
 All the copyrights notes are under `_includes/footer.html`. Also note that you 
-can toggle on/off copyright note from front-end. 
+can toggle on/off copyright note from front-end by setting up `show_disclaimer` 
+property in `_config.yml`. 
 
 ### Screenshots
 ![Home page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web.jpg "Desktop screen")
