@@ -33,7 +33,7 @@ configured in `_config.yml` file under root of the harmony directory.
 Feel free to change `name`, `description`, `meta_description`, `author details`,
 `social media names` and `google analytics id` accordingly. 
 
-```yml
+``` yml
 # Harmony theme configuration. Please change accordingly.
 harmony:
   name: Harmony
