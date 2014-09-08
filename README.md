@@ -21,7 +21,7 @@ Harmony is a responsive jekyll theme.
 5. Run `bundle install`
 6. Run the jekyll server by having: `jekyll serve --baseurl ''` or `rake preview`   
 
-Try to locate your browser at http://localhost:4000.
+Try to locate your browser at [http://localhost:4000](http://localhost:4000).
 
 Note: If you are a windows user please refer this nice website - http://jekyll-windows.juthilo.com/ by Julian Thilo to configure ruby + jekyll on windows.
 
