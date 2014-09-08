@@ -112,7 +112,7 @@ Version history
 
 | Version no. | Description  | Date |
 | --- | --- | --- |
-| 1.0 | Initial release | 8th September 2014 |
+| 1.0 | Initial release | 9th September 2014 |
 
 
 ## License
