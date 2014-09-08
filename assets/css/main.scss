@@ -237,22 +237,12 @@ footer.main-footer {
   color: $base-07;
   .column {
     float:left;
-
-    &:nth-child(1) {
-      @include column(1);
-    }
-    &:nth-child(2) {
-      @include column(1)
-    }
+    @include column(1);
 
     @include MQ(M) {
-      &:nth-child(1) {
+      &.one, &.two {
         @include column(.5);
         display: block;
-      }
-      &:nth-child(2) {
-        @include column(.5);
-        display: block;          
       }
     }
   }
@@ -292,7 +282,13 @@ footer.main-footer {
  ul.social-media {
   text-align:left;
   padding: 0 0 10px 0;
-  li { display:inline-block;}
+  li { 
+    display:inline-block;
+    // ie 7 hack;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+  }
   li > a {
     width: 32px;
     height: 32px;
@@ -355,18 +351,6 @@ footer.main-footer {
 div.page-content {
   @extend .default-page-content;
 }    
-
-.no-svg div.page-content ul li {
-  background: url(./images/bullet.png);
-  @include font-size(13px);
-  color: $color-2; 
-  line-height: 1.6;
-  background: url(./images/bullet.svg);
-  background-repeat: no-repeat;
-  background-position: 0 6px;
-  padding: 0 0 5px 15px;
-  margin-left: 0;
-} 
 
 div.page-content {
   ul {       
@@ -453,6 +437,16 @@ div.page-content {
   }
 }
 
+.no-svg div.page-content ul li {
+  background: url(./images/bullet.png);
+  @include font-size(13px);
+  color: $color-2; 
+  line-height: 1.6;
+  background-repeat: no-repeat;
+  background-position: 0 6px;
+  padding: 0 0 5px 15px;
+  margin-left: 0;
+} 
 
 // Theme base 01
 body.theme-base-01 {
@@ -539,7 +533,7 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 1em;
   @include font-size(12px);
   line-height: 1.4;
   white-space: pre;
@@ -561,8 +555,8 @@ pre {
 }
 
 .highlight {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 1em;
+  margin-top: 1em;
   pre {
     margin-bottom: 0;
   }
