@@ -61,16 +61,19 @@ harmony:
   show_disclaimer: true
 ```
 
-### Header navigation links
+### Includes 
 
-All the partial includes are under `_includes` directory. Feel free to add/edit
-links for your header in the file `header-links.html`.
+All the partial includes are under `_includes` directory.
 
-### Footer links
+#### Header navigation links
+
+Feel free to add/edit links for your header in the file `header-links.html`.
+
+#### Footer links
 
 Customize your footer links by editing `_includes/footer-links.html`
 
-### Copyrights/Disclaimer statements
+#### Copyrights/Disclaimer statements
 
 All the copyrights notes are under `_includes/footer.html`. Also note that you 
 can toggle on/off copyright note from front-end by setting up `show_disclaimer` 
