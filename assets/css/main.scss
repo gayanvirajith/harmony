@@ -173,274 +173,277 @@ div.default-page-content {
 
 body {
   color: $color-2;
+}
 
-  a {
-    @extend .default-anchor;
-  }
+a {
+  @extend .default-anchor;
+}
 
-  header.main-header, footer.main-footer {
-    p,address {
-      @include font-size(12px);
-      @include MQ(M) {
-        @include font-size(14px);        
-      }
-    }
-  }
-
-  header.main-header {
-    color: $base-00;
-    border-top: 5px $base-00 solid;
-
-    h1, h2 { text-align: center; color: inherit;}
-    a { 
-      color: inherit;
-      &:hover, &:active, &:focus {
-        border-bottom-color: transparent;
-      }
-    }
-
-    ul {
-      width: 100%;
-      text-align: center;
-      padding: 15px;
-    }
-    ul li {       
-      display: inline-block;
-      position:relative;
-      color: $base-08;
-    }
-
-    ul li span {
-      float: left;
-      display: inline-block;
-      width: 15px;
-    }
-
-    ul li a { 
-      display:inline-block;
-      color: inherit;
-      border-bottom: 2px transparent solid;
-      padding-bottom:5px;
-      @include transition(all, .2s);
-      @include MQ(M) {
-        @include font-size(18px);
-      }
-      &:hover, &:focus, &:active {
-        border-bottom-color: inherit;
-      }
-    }
-  }
-
-  footer.main-footer {
-    background-color: $base-00;
-    color: $base-07;
-    .column {
-      float:left;
-
-      &:nth-child(1) {
-        @include column(1);
-      }
-      &:nth-child(2) {
-        @include column(1)
-      }
-
-      @include MQ(M) {
-        &:nth-child(1) {
-          @include column(.5);
-          display: block;
-        }
-        &:nth-child(2) {
-          @include column(.5);
-          display: block;          
-        }
-      }
-    }
-
-    h6 {
-        position: relative;
-        padding: 10px 0;
-        text-transform: uppercase;
-    }
-    h6::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        width: 2rem;
-        height: 2px;
-        background: $base-07;
-        overflow: hidden;
-    } 
-
-    ul.menu {
-      padding: 0 0 1em 0;
-      li {
-        @include font-size(12px);
-        line-height: 1.6;
-        display: inline;
-        padding-right: 10px;        
-        @include MQ(M) {
-          @include font-size(16px);          
-        }
-      }
-    }
-
-    p.disclaimer {
-      text-align: center;
-    }
-
-   ul.social-media {
-    text-align:left;
-    padding: 0 0 10px 0;
-    li { display:inline-block;}
-    li > a {
-      width: 32px;
-      height: 32px;
-      background-color: $base-07;
-      background-image: url("./images/socials-icons.svg");
-      background-size: 224px 64px;
-      border-radius: 0.25em;
-      @include transition(background-color 0.2s);
-      border-bottom-color: transparent;
-
-      &:hover {
-        background-color: $base-08;
-      }
-    }
-      
-    li a.twitter {
-      background-position: 0 0;
-        &:hover {
-          background-position: 0 -32px;
-      } 
-    }
-
-    li a.github {
-      background-position: -32px 0;
-      &:hover {
-        background-position: -32px -32px;
-      }
-    }
-
-    li a.facebook {
-      background-position: -64px 0;
-      &:hover {
-        background-position: -64px -32px;
-      }
-    }
-
-    li a.dribble {
-      background-position: -96px 0;
-      &:hover {
-        background-position: -96px -32px;
-      }
-    }
-
-    li a.google {
-      background-position: -128px 0;
-      &:hover {
-        background-position: -128px -32px;
-      }
-    }
-
-    li a.pinterest {
-      background-position: -196px 0;
-      &:hover {
-        background-position: -196px -32px;
-      }
-    }
-    }
-  }
-
-  div.page-content {
-    @extend .default-page-content;
-  }    
-
-  div.page-content {
-    ul {       
-      padding: 0 0 1em 0;
-      li {
-        @include font-size(13px);
-        color: $color-2; 
-        line-height: 1.6;
-        background: url(./images/bullet.svg);
-        background-repeat: no-repeat;
-        background-position: 0 6px;
-        padding: 0 0 5px 15px;
-        margin-left: 0;
-      }
-      @include MQ(M){        
-        li {         
-          @include font-size(16px);  
-          line-height: 1.5;
-          background-position: 0 7px; 
-        }
-      }
-    }
-    ol { 
-      @include font-size(12px);
-      // padding-top: 1em;
-      padding-bottom: 1em;
-      list-style: decimal;
-      margin-left: 0;
-      li {
-        color: $color-2; 
-        line-height: 1.6;
-        padding: 0 0 5px 0px;
-        margin-left: 2em;
-        position:relative;
-      }
-      @include MQ(M){
-        @include font-size(16px);
-        li { 
-          line-height: 1.5;
-          background-position: 0 7px; 
-        }
-      }
-    }
-
-    dl {
-      padding-bottom: 1em;
-      dt, dd {
-        @include font-size(12px);  
-        line-height: 1.5;        
-      }
-      
-      dt {
-        font-weight: bold;
-        padding-bottom: 5px;
-        padding-top: 20px;
-      }
-
-      dt:first-child {
-        padding-top: 0px;
-      }
-
-      dd {
-        padding-left: 10px;
-      }
-
-      @include MQ(M) {        
-        dt, dd {
-          @include font-size(16px);
-          line-height: 1.6;        
-        }
-      }
-    }
-    
-    img { 
-      padding: 1em 0;
-    }
-
-    p {
-      margin-bottom: 1em;      
-    }
-
-    h1, h2, h3, h4, h5, h6 { 
-      padding-bottom: 5px;
+header.main-header, footer.main-footer {
+  p,address {
+    @include font-size(12px);
+    @include MQ(M) {
+      @include font-size(14px);        
     }
   }
 }
 
+header.main-header {
+  color: $base-00;
+  border-top: 5px $base-00 solid;
+
+  h1, h2 { text-align: center; color: inherit;}
+  a { 
+    color: inherit;
+    &:hover, &:active, &:focus {
+      border-bottom-color: transparent;
+    }
+  }
+
+  ul {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
+  ul li {       
+    display: inline-block;
+    position:relative;
+    color: $base-08;
+  }
+
+  ul li span {
+    float: left;
+    display: inline-block;
+    width: 15px;
+  }
+
+  ul li a { 
+    display:inline-block;
+    color: inherit;
+    border-bottom: 2px transparent solid;
+    padding-bottom:5px;
+    @include transition(all, .2s);
+    @include MQ(M) {
+      @include font-size(18px);
+    }
+    &:hover, &:focus, &:active {
+      border-bottom-color: inherit;
+    }
+  }
+}
+
+footer.main-footer {
+  background-color: $base-00;
+  color: $base-07;
+  .column {
+    float:left;
+
+    &:nth-child(1) {
+      @include column(1);
+    }
+    &:nth-child(2) {
+      @include column(1)
+    }
+
+    @include MQ(M) {
+      &:nth-child(1) {
+        @include column(.5);
+        display: block;
+      }
+      &:nth-child(2) {
+        @include column(.5);
+        display: block;          
+      }
+    }
+  }
+
+  h6 {
+      position: relative;
+      padding: 10px 0;
+      text-transform: uppercase;
+  }
+  h6::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 2rem;
+      height: 2px;
+      background: $base-07;
+      overflow: hidden;
+  } 
+
+  ul.menu {
+    padding: 0 0 1em 0;
+    li {
+      @include font-size(12px);
+      line-height: 1.6;
+      display: inline;
+      padding-right: 10px;        
+      @include MQ(M) {
+        @include font-size(16px);          
+      }
+    }
+  }
+
+  p.disclaimer {
+    text-align: center;
+  }
+
+ ul.social-media {
+  text-align:left;
+  padding: 0 0 10px 0;
+  li { display:inline-block;}
+  li > a {
+    width: 32px;
+    height: 32px;
+    background-color: $base-07;
+    background-image: url("./images/socials-icons.svg");
+    background-size: 224px 64px;
+    border-radius: 0.25em;
+    @include transition(background-color 0.2s);
+    border-bottom-color: transparent;
+
+    &:hover {
+      background-color: $base-08;
+    }
+  }
+    
+  li a.twitter {
+    background-position: 0 0;
+      &:hover {
+        background-position: 0 -32px;
+    } 
+  }
+
+  li a.github {
+    background-position: -32px 0;
+    &:hover {
+      background-position: -32px -32px;
+    }
+  }
+
+  li a.facebook {
+    background-position: -64px 0;
+    &:hover {
+      background-position: -64px -32px;
+    }
+  }
+
+  li a.dribble {
+    background-position: -96px 0;
+    &:hover {
+      background-position: -96px -32px;
+    }
+  }
+
+  li a.google {
+    background-position: -128px 0;
+    &:hover {
+      background-position: -128px -32px;
+    }
+  }
+
+  li a.pinterest {
+    background-position: -196px 0;
+    &:hover {
+      background-position: -196px -32px;
+    }
+  }
+  }
+}
+
+div.page-content {
+  @extend .default-page-content;
+}    
+
+.no-svg div.page-content ul li {
+  background: url(./images/bullet.png);
+} 
+
+div.page-content {
+  ul {       
+    padding: 0 0 1em 0;
+    li {
+      @include font-size(13px);
+      color: $color-2; 
+      line-height: 1.6;
+      background: url(./images/bullet.svg);
+      background-repeat: no-repeat;
+      background-position: 0 6px;
+      padding: 0 0 5px 15px;
+      margin-left: 0;
+    }
+    @include MQ(M){        
+      li {         
+        @include font-size(16px);  
+        line-height: 1.5;
+        background-position: 0 7px; 
+      }
+    }
+  }
+  ol { 
+    @include font-size(12px);
+    // padding-top: 1em;
+    padding-bottom: 1em;
+    list-style: decimal;
+    margin-left: 0;
+    li {
+      color: $color-2; 
+      line-height: 1.6;
+      padding: 0 0 5px 0px;
+      margin-left: 2em;
+      position:relative;
+    }
+    @include MQ(M){
+      @include font-size(16px);
+      li { 
+        line-height: 1.5;
+        background-position: 0 7px; 
+      }
+    }
+  }
+
+  dl {
+    padding-bottom: 1em;
+    dt, dd {
+      @include font-size(12px);  
+      line-height: 1.5;        
+    }
+    
+    dt {
+      font-weight: bold;
+      padding-bottom: 5px;
+      padding-top: 20px;
+    }
+
+    dt:first-child {
+      padding-top: 0px;
+    }
+
+    dd {
+      padding-left: 10px;
+    }
+
+    @include MQ(M) {        
+      dt, dd {
+        @include font-size(16px);
+        line-height: 1.6;        
+      }
+    }
+  }
+  
+  img { 
+    padding: 1em 0;
+  }
+
+  p {
+    margin-bottom: 1em;      
+  }
+
+  h1, h2, h3, h4, h5, h6 { 
+    padding-bottom: 5px;
+  }
+}
 
 
 // Theme base 01
