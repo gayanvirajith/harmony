@@ -16,7 +16,7 @@ Harmony is a responsive jekyll theme.
 
 1. [Fork](https://github.com/web-create/harmony/fork) this repository.
 2. Clone it: git clone https://github.com/YOUR-USERNAME/harmony.
-3. If you completely new to jekyll, please read more about [Jekyll](http://jekyllrb.com/) and [Github pages](https://github.com/github/pages-gem).
+3. If you completely new to jekyll, please read more about [Jekyll](http://jekyllrb.com/) and [Github pages](https://help.github.com/articles/using-jekyll-with-pages).
 4. Change your directory into cloned repository. 
 5. Run `bundle install`
 6. Run the jekyll server by having: `jekyll serve --baseurl ''` or `rake preview`   
