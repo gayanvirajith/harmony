@@ -30,7 +30,7 @@ Note: If you are a windows user please refer this nice website - http://jekyll-w
 Harmony theme has some customizable options. All the configuration details are 
 configured in `_config.yml` file under root of the harmony directory. 
 
-Feel free to change `name`, `description`, `meta_description`, `author details`,
+Feel free to change your `name`, `description`, `meta_description`, `author details`,
 `social media names` and `google analytics id` accordingly. 
 
 ``` yml
@@ -61,12 +61,31 @@ harmony:
   show_disclaimer: true
 ```
 
+### Header navigation links
+
+All the partial includes are under `_includes` directory. Feel free to add/edit
+links for your header in the file `header-links.html`.
+
+### Footer links
+
+Add/edit links to `_includes/footer-links.html`.
+
+### Copyrights/Disclaimer statements
+
+All the copyrights notes are under `_includes/footer.html`. Also note that you 
+can toggle on/off copyright note from front-end. 
+
 ### Screenshots
 ![Home page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web.jpg "Desktop screen")
 
 ![Post page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web-2.jpg "Post page screenshot")
 
 ![Blog archive page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web-3.jpg "Blog archive page screenshot")
+
+#### Feedback/Bugs/Suggestions 
+
+Please submit as [Github issue](https://github.com/web-create/harmony/issues/new),
+I am happy to response back.
 
 Version history
 ---------------
