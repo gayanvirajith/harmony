@@ -358,6 +358,14 @@ div.page-content {
 
 .no-svg div.page-content ul li {
   background: url(./images/bullet.png);
+  @include font-size(13px);
+  color: $color-2; 
+  line-height: 1.6;
+  background: url(./images/bullet.svg);
+  background-repeat: no-repeat;
+  background-position: 0 6px;
+  padding: 0 0 5px 15px;
+  margin-left: 0;
 } 
 
 div.page-content {
