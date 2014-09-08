@@ -12,7 +12,6 @@ Harmony is a responsive jekyll theme.
 
 - [Harmony](#harmony)
 - [About Jekyll](#about-jekyll)
-- [Sidebar menu](#sidebar-menu)
 - [How to install/run](#how-to-installrun)
 - [Options/Usage](#optionsusage)
   - [Header navigation links](#header-navigation-links)
