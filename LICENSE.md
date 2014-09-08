@@ -1,4 +1,4 @@
-The MIT License (MIT)
+# Released MIT License (MIT)
 
 Copyright (c) 2013 webcreate.lk - Gayan Virajith
 
