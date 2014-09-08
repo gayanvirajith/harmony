@@ -113,7 +113,7 @@ Version history
 | 1.0 | Initial release | 8th September 2014 |
 
 
-### License
+## License
 
 Free / Open sourced under the 
 [MIT](https://github.com/web-create/harmony/blob/master/LICENSE.md).
