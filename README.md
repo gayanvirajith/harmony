@@ -8,6 +8,21 @@ Harmony is a responsive jekyll theme.
 - Browser support: IE 8+, Chrome, Safari and Firefox 
 - Fluidly responsive 
 
+## Contents
+
+- [Harmony](#harmony)
+- [About Jekyll](#about-jekyll)
+- [Sidebar menu](#sidebar-menu)
+- [How to install/run](#how-to-installrun)
+- [Options/Usage](#optionsusage)
+  - [Header navigation links](#header-navigation-links)
+  - [Footer links](#footer-links)
+  - [Copyrights/Disclaimer statements](#copyrightsdisclaimer-statements)
+- [Screenshots](#screenshots)
+- [Feedback/Bugs/Suggestions](#feedbackbugssuggestions)
+- [Version history](#version-history)
+- [License](#license)
+
 ## About jekyll 
 
 [Jekyll](http://jekyllrb.com/) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
