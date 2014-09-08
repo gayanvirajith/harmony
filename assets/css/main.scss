@@ -284,10 +284,6 @@ footer.main-footer {
   padding: 0 0 10px 0;
   li { 
     display:inline-block;
-    // ie 7 hack;
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
   }
   li > a {
     width: 32px;
@@ -340,12 +336,23 @@ footer.main-footer {
   }
 
   li a.pinterest {
-    background-position: -196px 0;
-    &:hover {
-      background-position: -196px -32px;
+      background-position: -196px 0;
+      &:hover {
+        background-position: -196px -32px;
+      }
     }
   }
-  }
+}
+
+.no-svg footer.main-footer ul.social-media li a {
+  width: 32px;
+    height: 32px;
+    background-color: $base-07;
+    background-image: url("./images/socials-icons.png");
+    background-size: 224px 64px;
+    border-radius: 0.25em;
+    @include transition(background-color 0.2s);
+    border-bottom-color: transparent;
 }
 
 div.page-content {
