@@ -1,17 +1,13 @@
 # Harmony
 
 Harmony is a responsive jekyll theme.
+### Screenshots
 
-### Status
+![Desktop screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web.jpg "Desktop screen")
 
-Work in progress...
+Version history
+---------------
 
-#### Todo list
-
-- [x] Main layout
-- [x] Blog page
-- [x] Normal pages
-- [ ] Pagination
-- [ ] Theme patterns
-- [ ] Proper documentation
-
+| Version no. | Description  | Date |
+| --- | --- | --- |
+| 0.1 | Initial realease | 8th September 2014 |
