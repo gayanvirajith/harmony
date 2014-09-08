@@ -1,19 +1,16 @@
 <ul>
 	<li>
-		<a href="{{ site.url }}/about/">About</a>
-		<span>/</span>
+		<a href="{{ site.url }}/about/">About</a><span>/</span>
 	</li>
 	<li>
-		<a href="{{ site.url }}/blog/">Blog</a>
-		<span>/</span>
+		<a href="{{ site.url }}/blog/">Blog</a><span>/</span>
 	</li>
 	{% if site.harmony.social.github %}
 	<li>
 		<a title="{{ site.harmony.social.github }} on Github" 
 			href="https://github.com/{{ site.harmony.social.github }}" target="_blank">
 			Github
-		</a>
-		<span>/</span>
+		</a><span>/</span>
 	</li>
 	{% endif %}
 </ul>

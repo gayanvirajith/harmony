@@ -256,7 +256,7 @@ footer.main-footer {
       content: '';
       position: absolute;
       top: 0;
-      width: 2rem;
+      width: 2em;
       height: 2px;
       background: $base-07;
       overflow: hidden;
@@ -288,7 +288,7 @@ footer.main-footer {
   li > a {
     width: 32px;
     height: 32px;
-    background-color: $base-07;
+    background: $base-07;
     background-image: url("./images/socials-icons.svg");
     background-size: 224px 64px;
     border-radius: 0.25em;
@@ -353,6 +353,10 @@ footer.main-footer {
     border-radius: 0.25em;
     @include transition(background-color 0.2s);
     border-bottom-color: transparent;
+
+    &:hover {
+      background-color: $base-08;
+    }
 }
 
 div.page-content {
@@ -363,7 +367,7 @@ div.page-content {
   ul {       
     padding: 0 0 1em 0;
     li {
-      @include font-size(13px);
+      @include font-size(14px);
       color: $color-2; 
       line-height: 1.6;
       background: url(./images/bullet.svg);
@@ -507,18 +511,18 @@ footer.main-footer {
 
 ---------------------------------- */
 blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
+  padding: .5em 1em;
+  margin: .8em 0;
   color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  border-left: .25em solid #e5e5e5;
 }
 blockquote p:last-child {
   margin-bottom: 0;
 }
 @include MQ(M) {
   blockquote {
-    padding-right: 5rem;
-    padding-left: 1.25rem;
+    padding-right: 5em;
+    padding-left: 1.25em;
   }
 }
 
@@ -539,7 +543,7 @@ code {
 pre {
   display: block;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   padding: 1em;
   @include font-size(12px);
   line-height: 1.4;
@@ -608,12 +612,12 @@ div.posts {
   }
 }
 div.post {
-  padding-top: .5rem;
-  padding-bottom: 1rem;
+  padding-top: .5em;
+  padding-bottom: 1em;
   border-bottom: 1px $base-05 solid;
   @include MQ(M) {
 
-    padding-bottom: 2rem;  
+    padding-bottom: 2em;  
   }
 
   &:last-child {
@@ -640,13 +644,13 @@ span.post-date {
 
 --------------------------------- */
 .related {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
   border-top: 1px solid $base-05;
 
   @include MQ(M) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 }
 .related-posts {
@@ -731,7 +735,7 @@ table {
 }
 td,
 th {
-  padding: .25rem .5rem;
+  padding: .25em .5em;
   border: 1px solid $base-04;
 }
 tbody tr:nth-child(odd) td,
