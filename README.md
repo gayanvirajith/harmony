@@ -12,9 +12,16 @@ Harmony is a responsive jekyll theme.
 
 [Jekyll](http://jekyllrb.com/) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
 
-## How to use
+## How to install/run
 
+1. [Fork](https://github.com/web-create/harmony/fork) this repository.
+2. Clone it: git clone https://github.com/YOUR-USERNAMW/harmony.
+3. If you completely new to jekyll, please read more about (Jekyll)[http://jekyllrb.com/] and (Github page)[https://github.com/github/pages-gem].
+4. Change your directory into cloned repository. 
+5. Run `bundle install`
+6. Run the jekyll server by having: `jekyll serve --baseurl ''` or `rake preview`   
 
+Note: If you are a windows user please refer this nice website http://jekyll-windows.juthilo.com/ by Julian Thilo to configure ruby + jekyll on windows.
 
 ### Screenshots
 ![Home page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web.jpg "Desktop screen")
