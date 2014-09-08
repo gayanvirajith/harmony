@@ -207,24 +207,17 @@ body {
     ul li {       
       display: inline-block;
       position:relative;
-      margin-left: 15px;
       color: $base-08;
-      &:before {
-        position:absolute;
-        content: "/";
-        left: -15px;
-      }
-      &:before:first {
-        content: "";
-      }
+    }
 
-      &:first-child:before {
-        content: "";
-      }
+    ul li span {
+      float: left;
+      display: inline-block;
+      width: 15px;
     }
 
     ul li a { 
-      display:block;
+      display:inline-block;
       color: inherit;
       border-bottom: 2px transparent solid;
       padding-bottom:5px;
