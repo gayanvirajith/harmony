@@ -1,38 +1,20 @@
 # Harmony Jekyll theme general configurations 
-markdown: redcarpet
-
-# Conversion
-markdown:    kramdown
-highlighter: pygments # this is how you put pygments config in jekyll 2.0 instead of pygments: true
-
-# Permalinks
-permalink:        pretty
 
 # Base URL
 baseurl: /harmony
+
 # Site live URL
 url: http://webcreate.lk/harmony
+
 # Localhost 
-#url: http://localhost:4000
-
-exclude: 
-  - CNAME
-  - Gemfile
-  - Rakefile
-  - README.md
-  - .gitignore
-  - .sass-cache
-  - Gemfile.lock
-
-# Sass conversion configs
-sass:
-    sass_dir: assets/css/_sass
-    style: :compressed
+#url: http://192.168.0.102:4000
 
 # Harmony theme configuration. Please change accordingly.
 harmony:
-  name: Harmony #Name of your site
-  description: Harmony is free responsive jekyll theme. # Little description about your site
+  name: Harmony
+  # Little description about your site
+  description: Harmony is free responsive jekyll theme.
+  meta_description: Harmony is free responsive jekyll theme. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
   basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
   author: # Author details
     name: Gayan Virajith
@@ -52,3 +34,24 @@ harmony:
     pinterest: 
   # Toggle disclaimer in footer
   show_disclaimer: true
+
+# Conversion / Build settings 
+markdown:    kramdown
+highlighter: pygments # this is how you put pygments config in jekyll 2.0 instead of pygments: true
+
+# Permalinks
+permalink:        pretty
+
+exclude: 
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
+
+# Sass conversion configs
+sass:
+    sass_dir: assets/css/_sass
+    style: :compressed
