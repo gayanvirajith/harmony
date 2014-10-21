@@ -4,7 +4,7 @@
 baseurl: /harmony
 
 # Site live URL
-url: http://webcreate.lk/harmony
+url: http://gayanvirajith.github.io/harmony
 
 # Localhost 
 # url: http://localhost:4000
@@ -13,7 +13,7 @@ url: http://webcreate.lk/harmony
 harmony:
   name: Harmony
   # Little description about your site
-  description: Harmony is free responsive jekyll theme.
+  description: Harmony is a free responsive jekyll theme.
   meta_description: Harmony is free responsive jekyll theme. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
   basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
   author: # Author details
