@@ -1,9 +1,9 @@
 <ul>
 	<li>
-		<a href="{{ site.url }}/about/">About</a><span>/</span>
+		<a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}">About</a><span>/</span>
 	</li>
 	<li>
-		<a href="{{ site.url }}/blog/">Blog</a><span>/</span>
+		<a href="{{ '/blog' | prepend: site.baseurl | prepend: site.url }}">Blog</a><span>/</span>
 	</li>
 	{% if site.harmony.social.github %}
 	<li>
