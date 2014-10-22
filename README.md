@@ -3,7 +3,7 @@
 Harmony is a responsive jekyll theme. 
 
 - Build for jekyll 2.x
-- Support Google anaytics and RSS feeds
+- Support Google analytics and RSS feeds
 - Sass based styles
 - Browser support: IE 8+, Chrome, Safari and Firefox 
 - Fluidly responsive 
@@ -46,7 +46,7 @@ Note: If you are a windows user please refer this nice website - http://jekyll-w
 Harmony theme has some customizable options. All the configuration details are 
 configured in `_config.yml` file under root of the harmony directory. 
 
-Feel free to change your `name`, `description`, `meta_description`, `author details`,
+Feel free to change your `name`, `descriptionn`, `meta_description`, `author details`,
 `social media names` and `google analytics id` accordingly. 
 
 ``` yml
@@ -56,7 +56,7 @@ harmony:
   # Little description about your site
   description: Harmony is free responsive jekyll theme.
   meta_description: Harmony is free responsive jekyll theme. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
+  basetheme: theme-base-01 # pre defined the{{ site.url | prepend: site.baseurl }}mes are darken, blue-water, reddish.
   author: # Author details
     name: Gayan Virajith
     email: gayanvirajith@gmail.com
@@ -104,7 +104,7 @@ property in `_config.yml`.
 
 #### Feedback/Bugs/Suggestions 
 
-Please submit as [Github issue](https://github.com/web-create/harmony/issues/new),
+Please submit as [Github issuee](https://github.com/web-create/harmony/issues/new),
 I am happy to response back.
 
 Version history
