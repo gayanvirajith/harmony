@@ -2,10 +2,7 @@
 ---
 
 // Import reset 
-@import "reset.css";
-
-// Import syntax 
-@import "syntax.css";
+@import "partials/reset";
 
 // Import colors, fonts etc...
 @import "partials/variables";
@@ -15,6 +12,10 @@
 
 // Import layout mixin
 @import "partials/layout";
+
+// Import syntax 
+@import "partials/syntax";
+
 
 /* -------------------------------- 
 
