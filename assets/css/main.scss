@@ -146,8 +146,11 @@ hr {
   height: 0;
 }
 
-strong { font-weight: 600; }
+/* bold text */
+strong, b { font-weight: 600; }
 
+/* italic */
+em, i { font-style: italic; }
 /* --------------------------------
 
  Theme base

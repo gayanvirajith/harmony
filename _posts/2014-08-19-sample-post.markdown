@@ -8,7 +8,8 @@ categories:
 permalink: sample-post
 ---
 
-Just a sample post to show some of the typography elements supported from harmony theme.
+Just a sample post to show some of the *typography* elements supported from 
+**harmony** theme.
 
 ___
 
