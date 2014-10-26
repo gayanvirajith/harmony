@@ -114,6 +114,7 @@ Version history
 | --- | --- | --- |
 | 1.0 | Initial release | 9th September 2014 |
 | 1.0.1 | v1.0.1 with minor bug fix | 9th September 2014 |
+| 1.0.2 | v1.0.2 Optimize for google | 24th October 2014 |
 
 
 ## License
