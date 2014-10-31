@@ -19,7 +19,7 @@ harmony:
   # in your feed.xml site description.
   meta_description: > # 
    Harmony is a free responsive jekyll theme by Gayan Virajith
-   and Maheshika Lakmali. Source code available at 
+   and Maheshika Lakmali. Sourced on Github - 
    https://github.com/gayanvirajith/harmony
   basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
   author: # Author details
