@@ -13,7 +13,7 @@ layout: default
 
     			<span class="post-date">{{ post.date | date_to_string }}</span>    			
   				<p>
-	  				{{ post.description }}	
+	  				{{ post.excerpt }}	
   				</p>
   				<p>
   					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" title="{{ post.title}}">
