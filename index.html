@@ -11,7 +11,17 @@ layout: default
 			      </a>
     			</h3>
 
-    			<span class="post-date">{{ post.date | date_to_string }}</span>    			
+          <p class="post-meta">
+            {% if (post.categories.size > 0 %}
+            <span class="categories">
+            {{ post.categories | array_to_sentence_string }}
+            </span> |
+            {% endif %}
+            <span class="post-date">
+            {{ post.date | date: "%b %-d, %Y" }} 
+            </span>
+          </p>          
+    			    			
   				<p>
 	  				{{ post.excerpt }}	
   				</p>
