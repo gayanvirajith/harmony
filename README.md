@@ -47,7 +47,7 @@ Harmony theme has some customizable options. All the configuration details are
 configured in `_config.yml` file under root of the harmony directory. 
 
 Feel free to change your `name`, `descriptionn`, `meta_description`, `author details`,
-`social media names` and `google analytics id` accordingly. 
+`social media names` and `Google analytics id` accordingly. 
 
 ``` yml
 # Harmony theme configuration. Please change accordingly.
@@ -98,13 +98,13 @@ property in `_config.yml`.
 ### Screenshots
 ![Home page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web.jpg "Desktop screen")
 
-![Post page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web-2.jpg "Post page screenshot")
+![Post page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web-2.jpg "Post page screen-shot")
 
-![Blog archive page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web-3.jpg "Blog archive page screenshot")
+![Blog archive page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web-3.jpg "Blog archive page screen-shot")
 
 #### Feedback/Bugs/Suggestions 
 
-Please submit as [Github issuee](https://github.com/web-create/harmony/issues/new),
+Please submit as an [issue](https://github.com/web-create/harmony/issues/new),
 I am happy to response back.
 
 Version history
@@ -114,7 +114,7 @@ Version history
 | --- | --- | --- |
 | 1.0 | Initial release | 9th September 2014 |
 | 1.0.1 | v1.0.1 with minor bug fix | 9th September 2014 |
-| 1.0.2 | v1.0.2 Optimize for google | 24th October 2014 |
+| 1.0.2 | v1.0.2 Optimize for Google | 24th October 2014 |
 
 
 ## License

@@ -633,15 +633,14 @@ div.post {
     border-bottom: none;
   }
 }
-span.post-date {
+p.post-meta {
   line-height: 1.6;
   letter-spacing: 2px;
-  text-transform: uppercase;
   @include font-size(12px);
   overflow: hidden;
   display: block;
   padding: 1em 0;
-
+  color: #7A7A7A;
   @include MQ(M) {
     @include font-size(16px);
   }
