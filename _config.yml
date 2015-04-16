@@ -62,3 +62,5 @@ exclude:
 sass:
     sass_dir: assets/css/_sass
     style: :compressed
+
+paginate: 10
