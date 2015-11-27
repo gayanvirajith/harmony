@@ -6,3 +6,6 @@ _site/
 *~
 bourbon/
 Gemfile.lock
+
+vendor/
+.bundle
