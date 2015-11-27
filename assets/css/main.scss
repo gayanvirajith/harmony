@@ -481,7 +481,8 @@ body.theme-base-01 {
   }
 
   header.main-header {
-    color: $base-01;
+    background-color: $base-01;
+    color: $base-07;
     ul li { 
       color: $base-08;
     }

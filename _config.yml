@@ -4,16 +4,16 @@
 baseurl: /harmony
 
 # Site live URL
-url: http://gayan.me
+# url: http://gayan.me
 
 # Localhost 
-# url: http://127.0.0.1:4000  
+url: http://127.0.0.1:4000  
 
 # Harmony theme configuration. Please change accordingly.
 harmony:
-  name: Harmony
+  name: Dave Jones
   # Little description about your site
-  description: Harmony is free responsive jekyll theme.
+  description: My Place On The Net
   # 'meta_description:' Write an awesome description for your new site here.
   # It will appear in your document head meta (for Google search results) and 
   # in your feed.xml site description.
@@ -32,11 +32,11 @@ harmony:
 
   # Profile links, leave blank to ignore
   social: 
-    github: gayanvirajith
-    twitter: gayanvirajith
-    facebook: gayanvirajith
-    gplus: +GayanVirajith
-    dribble: gayan
+    github: dvjones89
+    twitter: dvjones89
+    facebook: 
+    gplus: 
+    dribble: 
     pinterest: 
   # Toggle disclaimer in footer
   show_disclaimer: true
@@ -57,6 +57,7 @@ exclude:
   - .gitignore
   - .sass-cache
   - Gemfile.lock
+  - vendor
 
 # Sass conversion configs
 sass:
