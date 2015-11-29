@@ -10,7 +10,7 @@ url: http://127.0.0.1:4000
 harmony:
   name: Dave Jones
   # Little description about your site
-  description: Dave Jones - My Place On The Net
+  description: My Place On The Net
   # 'meta_description:' Write an awesome description for your new site here.
   # It will appear in your document head meta (for Google search results) and 
   # in your feed.xml site description.
@@ -38,9 +38,6 @@ harmony:
 markdown:    kramdown
 # This is how you put pygments config in jekyll 2.0 instead of pygments: true
 highlighter: pygments 
-
-# Permalinks
-permalink:        pretty
 
 exclude: 
   - CNAME
