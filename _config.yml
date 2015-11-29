@@ -1,10 +1,7 @@
 # Harmony Jekyll theme general configurations 
 
-# Base URL
-baseurl: /harmony
-
 # Site live URL
-# url: http://gayan.me
+# url: http:dvj.me.uk
 
 # Localhost 
 url: http://127.0.0.1:4000  
@@ -13,19 +10,17 @@ url: http://127.0.0.1:4000
 harmony:
   name: Dave Jones
   # Little description about your site
-  description: My Place On The Net
+  description: Dave Jones - My Place On The Net
   # 'meta_description:' Write an awesome description for your new site here.
   # It will appear in your document head meta (for Google search results) and 
   # in your feed.xml site description.
   meta_description: > # 
-   Harmony is a free responsive jekyll theme by Gayan Virajith
-   and Maheshika Lakmali. Sourced on Github - 
-   https://github.com/gayanvirajith/harmony
+   Hi, I'm Dave, a 20-something tech enthusiast based in Edinburgh, Scotland.
   basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
   author: # Author details
-    name: Gayan Virajith
-    email: gayanvirajith@gmail.com
-    url: http://gayanvirajith.github.io
+    name: Dave Jones
+    email: david@dvj.me.uk
+    url: dvj.me.uk
 
   # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-xxxx-x
@@ -38,8 +33,6 @@ harmony:
     gplus: 
     dribble: 
     pinterest: 
-  # Toggle disclaimer in footer
-  show_disclaimer: true
 
 # Conversion / Build settings 
 markdown:    kramdown
