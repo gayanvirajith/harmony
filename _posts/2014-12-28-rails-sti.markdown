@@ -34,7 +34,7 @@ Yeah, I probably should have done that...
 ---
 
 #### The Code...
-Keen to learn something new, I thought I'd dabble with a bit of [Single  Table Inheritance](http://en.wikipedia.org/wiki/Single_Table_Inheritance).
+Keen to learn something new, I thought I'd dabble with a bit of [Single  Table Inheritance](http://en.wikipedia.org/wiki/Single_Table_Inheritance){:target="_blank"}.
 My problem seemed to fit the solution perfectly - Two objects that are used in a subtly different way but are modelled identically at the database layer. That's the golden use-case, right?
 
 Say hello to our `MemberResource` and `PublicResource` models. Both of these just inherit the attributes and validations from `Resource.rb` - It doesn't get much simpler than this!
@@ -235,4 +235,4 @@ Date:   Sat Nov 22 17:41:15 2014 +0000
     Undoing STI Cleverness
 {% endhighlight %}
 
-Thanks to [@relativesanity](http://www.twitter.com/relativesanity) for talking through the code and [markglenfletcher](https://github.com/markglenfletcher) for proof-reading an early version of this post.
+Thanks to [@relativesanity](http://www.twitter.com/relativesanity){:target="_blank"} for talking through the code and [markglenfletcher](https://github.com/markglenfletcher){:target="_blank"} for proof-reading an early version of this post.
