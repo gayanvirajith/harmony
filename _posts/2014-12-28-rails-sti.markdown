@@ -1,0 +1,238 @@
+---
+layout: post
+title:  "Fun With Rails Single Table Inheritance"
+date:   2014-12-28 00:00:00
+permalink: 'blog/rails-sti'
+---
+
+This is a blog post about my experiences with Rails Single Table Inheritance and how the greatest of intentions produced the biggest of headaches.
+
+#### The Challenge...
+
+One of my projects involves the collation and management of "Resources". A Resource is a video, news article, podcast etc - Something that can be used to supplement learning.
+Here's the original `Resource` model with some simple validations:
+
+{% highlight ruby %}
+# Represents an item on the resources page such as a video, article, podcasts etc.
+class Resource < ActiveRecord::Base
+  CATEGORY_OPTIONS = %w(Videos Articles Podcasts Reading Links)
+  
+  validates_presence_of :name, :description, :url
+  validates_inclusion_of :category, in: CATEGORY_OPTIONS,
+                                    message: 'not a valid option'
+end
+{% endhighlight %}
+
+Combine the above with a regular CRUD (Create, Read, Update & Destroy) controller and you've got a system to view, edit and delete resources. Job done.
+
+Now, fast forward a few months and imagine the following additional requirement:
+To supplement our offering of "free" resources, we'd like to introduce "member-only" resources that can only be accessed by users that are registered with the website.
+
+How would you model the difference between and public and member-only resource? I wonder how many people jumped straight to adding a boolean to `Resource.rb` to denote whether something is public? or private?
+Yeah, I probably should have done that...
+
+---
+
+#### The Code...
+Keen to learn something new, I thought I'd dabble with a bit of [Single  Table Inheritance](http://en.wikipedia.org/wiki/Single_Table_Inheritance).
+My problem seemed to fit the solution perfectly - Two objects that are used in a subtly different way but are modelled identically at the database layer. That's the golden use-case, right?
+
+Say hello to our `MemberResource` and `PublicResource` models. Both of these just inherit the attributes and validations from `Resource.rb` - It doesn't get much simpler than this!
+
+{% highlight ruby %}
+class MemberResource < Resource
+end
+
+class PublicResource < Resource
+end
+{% endhighlight %}
+
+As an aside, to leverage STI in Rails, you'll need to add a `type` column to the Resources DB table.
+
+{% highlight ruby %}
+class AddTypeToResources < ActiveRecord::Migration
+  def change
+    add_column :resources, :type, :string
+  end
+end
+{% endhighlight %}
+
+And if you're using strong params, you'll need to add the `:type` symbol to your list of whitelisted attributes.
+
+{% highlight ruby %}
+def resource_params
+  params.require(:resource)
+    .permit(:category, :name, :description, :url, :image, :type)
+end
+{% endhighlight %}
+
+So now we have 2 new models, `MemberResource` and `PublicResource`, both of which inherit all their attributes and validations from `Resource.rb`.
+
+Next, we need to wire things together at the controller level. Since the data-layer is identical, so too are the CRUD actions in the controller, right?
+I've already got all the CRUD logic defined (and tested) in `ResourcesController`.  
+Let's declare 2 new controllers that simply extend `ResourcesController` to inherit it's functionality:
+
+{% highlight ruby %}
+class MemberResourcesController < ResourcesController
+end
+
+class PublicResourcesController < ResourcesController
+end
+{% endhighlight %}
+
+Finally, let's update our routes file so that the new sub-controllers are exposed to the outside world and our old super-controller can just hide in the background.
+
+{% highlight ruby %}
+# resources :resources
+resources :public_resources
+resources :member_resources
+{% endhighlight %}
+
+---
+
+#### The Problems...
+Now that I've made my changes and described the motivation behind them, let's take a look at the problems they introduced.
+
+#####Problem 1: Which model should be created?
+
+In `ResourcesController.rb`, we have a hard-coded constant to build, update and destroy instances of `Resource.rb`. For example, take a look at the #new action, below:
+
+{% highlight ruby %}
+class ResourcesController < ApplicationController
+  #...
+  def new
+    @resource = Resource.new
+  end
+  #...
+end
+{% endhighlight %}
+
+We need to change this so that a `PublicResource` or a `MemberResource` is instantiated/updated, as required.
+This rather ugly hack solves the problem by instantiating the correct object based on the controller handling the request:
+
+{% highlight ruby %}
+class ResourcesController < ApplicationController
+  #... 
+  def new
+    @resource = klass.new
+  end
+  #... 
+
+  private
+
+  def klass
+    Object.const_get params[:controller].classify
+  end
+end
+{% endhighlight %}
+
+
+<br/><br/>
+
+##### Problem 2: Which parameter should be whitelisted?
+Similar to the problem outlined above, our Rails 4 Strong Parameters are hard-coded to require the `:resource` key: 
+{% highlight ruby %}
+def resource_params
+  params.require(:resource)
+    .permit(:category, :name, :description, :url, :image, :type)
+end
+{% endhighlight %}
+
+Instead, we need to intelligently permit the `:member_resource` or `:public_resource` key, depending on the controller being hit.
+We can re-use the `klass` method from Problem 1, adding some ugly string manipulation to convert the klass to a symbol:
+
+{% highlight ruby %}
+def resource_params
+  params.require(klass.name.underscore.to_sym)
+    .permit(:category, :name, :description, :url, :image, :type)
+end
+{% endhighlight %}
+
+<br/><br/>
+
+##### Problem 3: RSpec Missing Routes
+Here's what happens when you try to run the spec for the old `ResourcesController`:
+
+{% highlight bash %}
+rspec spec/controllers/resource_controller_spec.rb
+Failure/Error: get :edit, id: resource
+     ActionController::UrlGenerationError:
+       No route matches {:action=>"edit", :controller=>"resources", :id=>"1"}
+{% endhighlight %}
+
+We're seeing this error because I've removed the routes for `ResourcesController` (remember that I commented out the line in `routes.rb` ?). RSpec can no longer reach the CRUD actions defined on `ResourcesController` and is therefore throwing an error.
+
+Rather than re-introducing the routes across the entire app, let's just inject them at run-time, for the purpose of the spec:
+
+{% highlight ruby %}
+# Define any spec-specific routes, here
+inject_test_routes = Proc.new do
+  resources :resources
+end
+
+# This runs before all specs and injects any routes defined in the proc above.
+before(:all) do
+  Rails.application.routes.eval_block(inject_test_routes)
+end
+{% endhighlight %}
+
+<br/><br/>
+
+##### Problem 4: Missing Views & DoubleRender errors
+Here comes another error:
+
+{% highlight ruby %}
+rspec spec/controllers/resource_controller_spec.rb
+Failure/Error: post :create, resource: invalid_params
+     ActionView::MissingTemplate:
+{% endhighlight %}
+
+ RSpec is throwing a MissingTemplate error because, after processing the "create" action, it's trying to render the `resources#create` view, rather than `public_resources#create` view or `member_resources#create` view, as expected.
+ 
+To fix this, let's tell `resources_controller#create` to render nothing and define appropriate redirects in the sub-controllers.
+ {% highlight ruby %}
+ class ResourcesController < ApplicationController
+  def create
+    render nothing: true
+    @resource = klass.new(resource_params)
+    @resource.save
+  end
+end
+
+class PublicResourcesController < ResourcesController
+  def create
+    if super
+      redirect_to controller: 'page', action: 'resources'
+    else
+      render :new
+    end
+  end
+end
+{% endhighlight %}
+ 
+OK, we're back to a passing test-suite! Let's verify the app still works in the browser:
+
+{% highlight bash %}
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action
+{% endhighlight %}
+
+Argh! Now we're getting an error because we're rendering "nothing" in the super-controller and then redirecting in the sub-controller. That's 2 renders for a single request - not allowed!
+
+#### The Conclusion...
+It seems that Single Table Inheritance is viewed, by many, to be more hassle than it's worth. I think I agree.
+By mapping multiple models to a single database table, you're asserting that the attributes and requirements of your models are identical today and will always be so in the future. That's quite a gamble and it's a lot of hassle if, further down the line, the models diverge and you need to split them out into their own tables.  
+
+If I've learnt one thing from this experience, however, it's that STI at the database layer is one thing, but inheritance at the controller layer is something very different.  
+Trying to define shared CRUD behaviour in one controller, whilst seeming very DRY (Don't Repeat Yourself), lead to horrible controller hacks, strange routing and bizarre tests.  
+
+Perhaps moving the CRUD logic to a shared "factory" or "service" model, used by all controllers is a better idea. At this point, though, it's not worth the additional complexity and I think the following commit says it all:
+
+{% highlight bash %}
+commit 423fc7f97d9b049b276bca420890ed7ed198b25f
+Author: Dave Jones
+Date:   Sat Nov 22 17:41:15 2014 +0000
+
+    Undoing STI Cleverness
+{% endhighlight %}
+
+Thanks to [@relativesanity](http://www.twitter.com/relativesanity) for talking through the code and [markglenfletcher](https://github.com/markglenfletcher) for proof-reading an early version of this post.
