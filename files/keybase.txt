@@ -1,0 +1,77 @@
+==================================================================
+https://keybase.io/dvjones89
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://dvj.me.uk
+  * I am dvjones89 (https://keybase.io/dvjones89) on keybase.
+  * I have a public key with fingerprint BDE8 3147 7F01 4476 47E1  8F5F 5413 79CF A66F 5F86
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.3"
+        },
+        "key": {
+            "fingerprint": "bde831477f01447647e18f5f541379cfa66f5f86",
+            "host": "keybase.io",
+            "key_id": "541379CFA66F5F86",
+            "uid": "9f092cc1a860f47dac2be10ec7930300",
+            "username": "dvjones89"
+        },
+        "merkle_root": {
+            "ctime": 1420806398,
+            "hash": "27ed14bb039b27a3c6d8a69e331154b90f22ad6dc37bd51b1a533ec9ef0661d2260ad6e1614fe16cb2d10459cf87da8023b4e068ead4e160849cada8e693a9e4",
+            "seqno": 125896
+        },
+        "service": {
+            "hostname": "dvj.me.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1420806407,
+    "expire_in": 157680000,
+    "prev": "8929df0013238189b22beb31440b284aa5bd26ce8e42333d2f16a5623a5439f9",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+owFVUm2IVUUYPrdM18XKipC0QA7Yj9yu83XmzFyXWlm4rRFktLGuhNeZM3Punt27
+59zOOffaZVnciMoVYQtRNhGzP4H5o6wfYkWUH6BUu0YoYZYtdYvaQrI1K7CaczPM
++THMO+/zPvM87zsv3nyj1Z7rvaMx/VpUej730Q/S6n3j5IIRW0aqYRdGbK8S6DDN
+TqEY1nbBHtINKRKdD6LlYaR0fjBZfhXTYdd1nARRaFAg7+axPdqRwbNiPwjLOq7G
+QcZlS6UZhsR1fQAJcSlxNWS+4zsEYpd7vqDURIwayoEoSa971W5xlgJlbv/FdxfX
+UFp0ii18rZXgPuDI86BgFPjEVcJDUkOgPZdjgAHIgImOr1pS9cEo1AnjmeBhHQ9V
+dCmOopZrLw0yDCQIMEAxZ0aSSAZMFXK1gkRKgLlErsAeVUxQrjGG0CGSAx8hoajy
+sCuVAyUUDsba49oHlEKFEAUmrSGFxDe7J5GCgDjGPjOCGUBYEg0o00IRkweMcE+Y
+hKYcC66J8ZDop8LIiEMO43Q0i+N64OlMd9a3a/bywzpfGzIV1ThKIy+qmOuBNK0W
+Msdpo5rBNmtZSvSBFkNJBqEyI/v/TKGBXt8NAtwOWz9dDWJdCjKE41IGzMre0XXD
+yTjiygcAYoQZZKZRZg7SjJ4AiRgRwpEKUU8zTRDGWCEfUuFQhIVDMPf5NY/c6BRl
+Q5kE5VCktVjbo+O5u+dZuXZr/k03ZJ/Wal+4+L+f/HipzXqhOPfQ3NKeYO7w2MF7
+x07O5t86tHnRe1Pw8pInpibv6zt6ce3I9r8XkOabP98+u/rzo09OLfsQXRocfKyz
+q7Cip431TE9ueOZCY9EjtUNbNl66f+X+/Vbz2eK6mS3ra533TCZj8lVr32mbX8yt
+gq+/Px0/982ydcd+nTi+8+z2t9/dtqH//O7fzny79dQn1uLewzu+6+tfe+SlLvD9
+FdRXf7g5cfbPmS/6f1nywNCnbeN3fnxuV2fXqlse7N5UWX8Q9n21acXXt8noj1Pv
+7N167lGvcsDbW/5A9+zbU/rLne7eNnv5/JfW/J2fvXxmfI3cXZ56ZXLeT0vT32+9
+smuiuXDlXSd+LBw5fWFmx57m6n8A
+=6DOa
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dvjones89
+
+==================================================================
