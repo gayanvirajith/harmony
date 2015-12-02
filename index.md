@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: About Dave
 ---
 
 Hi, I'm Dave, a 20-something tech enthusiast based in Edinburgh, Scotland.
