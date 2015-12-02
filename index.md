@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Dave
+title: Dave Jones
 ---
 
 Hi, I'm Dave, a 20-something tech enthusiast based in Edinburgh, Scotland.
