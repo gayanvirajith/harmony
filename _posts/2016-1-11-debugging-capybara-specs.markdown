@@ -33,14 +33,14 @@ I had a hunch that perhaps the Rails Asset Pipeline wasn't working correctly in 
 Capybara::Screenshot.screenshot_and_open_image
 {% endhighlight %}
 
-Aside from the overflowing logo, everything looks OK! Perhaps it's not the asset pipeline, after all.
+Aside from some broken fonts (urgh), everything looks OK, the stylesheets are certainly being applied! Perhaps it's not an asset pipeline issue, after all.
 
 ![Capybara Screenshot](/assets/images/2016/capybara_screenshot.png){:.aligncenter}
 
 ---
 
 ### Good old console.log
-My next theory was that, for some internal reason, the javascript might not be executing within the Capybara browser. How can you tell whether JavaScript has executed on the page? Print a message to console, of course:  
+My next theory was that, for some internal reason, the javascript might not be executing within the Capybara browser. How can you tell whether JavaScript has executed on a page? Print a message to the console, of course:
 
 {% highlight ruby %}
 # Place a call to console.log anywhere in the your JavaScript code, verifying execution and checking variable values
