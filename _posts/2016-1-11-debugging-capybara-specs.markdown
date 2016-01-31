@@ -73,4 +73,4 @@ expect(page).to have_selector('div#url_div', visible: false)
 I guess that's [Occam's razor](https://en.wikipedia.org/wiki/Occam's_razor) in action.
 
 ##### Research Sources
-http://www.jasonfleetwoodboldt.com/writing/2014/03/18/capybara-debugging-javascript/
+[jasonfleetwoodboldt.com](http://www.jasonfleetwoodboldt.com/writing/2014/03/18/capybara-debugging-javascript/)
