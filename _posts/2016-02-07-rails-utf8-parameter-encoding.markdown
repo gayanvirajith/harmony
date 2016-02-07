@@ -18,7 +18,7 @@ Seemingly, a SEO bot in New York had submitted a message via the 'Contact Us' fo
 
 After a little reading around the subject, it seems Rails tries [everything it can](http://intertwingly.net/blog/2010/07/29/Rails-and-Snowmen) to force browsers to encode their submissions as UTF-8.  
 
-What can you do if/when a browser refuses to conform and sends non-unicode characters to your server? Surprisingly, I couldn't find an idiomatic solution to this issue.
+What can you do if/when a client refuses to conform and sends non-unicode characters to your server? Surprisingly, I couldn't find an idiomatic solution to this issue.
 
 A [post](https://robots.thoughtbot.com/fight-back-utf-8-invalid-byte-sequences) from the all-knowing [thoughtbot](https://thoughtbot.com/) switched me on to the `String#encode` method.  
 
