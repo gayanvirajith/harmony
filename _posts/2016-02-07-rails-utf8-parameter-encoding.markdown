@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Handling Non UTF-8 Params In Rails"
+title:  "Handling Non-UTF-8 Params In Rails"
 date:   2016-2-7 18:00:00
 permalink: 'blog/rails-utf-8'
 ---
@@ -11,7 +11,7 @@ invalid byte sequence in UTF-8
   app/controllers/page_controller.rb:21:in `contact'
 {% endhighlight %}
 
-Seemingly, a SEO bot in New York had submitted a message via the 'Contact Us' form, though it included a non-UTF8 sequence:
+Seemingly, a SEO bot in New York had submitted a message via the 'Contact Us' form, though it included a non-UTF-8 sequence:
 {% highlight ruby %}
 "And what is better than traffic? It\x92s recurring traffic!"
 {% endhighlight %}
@@ -22,7 +22,7 @@ What can you do if/when a client refuses to conform and sends non-unicode charac
 
 A [post](https://robots.thoughtbot.com/fight-back-utf-8-invalid-byte-sequences) from the all-knowing [thoughtbot](https://thoughtbot.com/) switched me on to the `String#encode` method.  
 
-Since my code was already using [Rails Strong Params](http://edgeguides.rubyonrails.org/action_controller_overview.html#strong-parameters), I bolted some extra code to the end of the method, stripping out any non-utf-8 characters:
+Since my code was already using [Rails Strong Params](http://edgeguides.rubyonrails.org/action_controller_overview.html#strong-parameters), I bolted some extra code to the end of the method, stripping out any non-UTF-8 characters:
 
 {% highlight ruby %}
 # Sanitise user-submitted data using strong parameters and enforcement of UTF-8 encoding
