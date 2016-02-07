@@ -36,7 +36,18 @@ layout: default
 	</div>
 	{% endif %}
 
-	<div class="post-footer">
+  <div id="disqus_thread"></div>
+    <script>
+    	(function() {  
+        var d = document, s = d.createElement('script');
+        s.src = '//dvjones89.disqus.com/embed.js';  
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    	})();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+  <div class="post-footer">
 		<div class="column-1">
 			{% if page.previous %}
 				<a href="{{page.previous.url }}"><< Older</a>
