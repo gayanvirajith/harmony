@@ -22,7 +22,7 @@ What can you do if/when a client refuses to conform and sends non-unicode charac
 
 A [post](https://robots.thoughtbot.com/fight-back-utf-8-invalid-byte-sequences) from the all-knowing [thoughtbot](https://thoughtbot.com/) switched me on to the `String#encode` method.  
 
-Since my code was already using [Rails Strong Params](http://edgeguides.rubyonrails.org/action_controller_overview.html#strong-parameters), I bolted on some extra code that'll strip out any non-UTF-8 characters from the submitted data:
+Since my code was already using [Rails Strong Params](http://edgeguides.rubyonrails.org/action_controller_overview.html#strong-parameters), I bolted some extra code to the end of the method, stripping out any non-utf-8 characters:
 
 {% highlight ruby %}
 # Sanitise user-submitted data using strong parameters and enforcement of UTF-8 encoding
