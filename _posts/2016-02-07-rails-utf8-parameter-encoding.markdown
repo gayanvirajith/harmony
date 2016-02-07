@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rails UTF-8 Parameter Encoding"
-date:   2016-2-6 18:00:00
+date:   2016-2-7 18:00:00
 permalink: 'blog/rails-utf-8'
 ---
 
