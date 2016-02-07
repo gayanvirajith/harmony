@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rails UTF-8 Parameter Encoding"
+title:  "Handling Non UTF-8 Params In Rails"
 date:   2016-2-7 18:00:00
 permalink: 'blog/rails-utf-8'
 ---
