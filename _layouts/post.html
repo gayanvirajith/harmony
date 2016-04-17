@@ -53,5 +53,11 @@ layout: default
 			{% endif %}
 		</div>
 	</div>
+
+        {% if site.harmony.disqus_shortname %}
+        <div class="comments">
+              {% include disqus.html %}
+        </div>
+        {% endif %}
 </div>
  
