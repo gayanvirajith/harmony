@@ -2,7 +2,7 @@
 layout: post
 title:  "[SOLVED] Docker on Raspbian - No Available Network"
 date:   2017-1-25 23:15:00
-permalink: 'blog/docker-raspbian-network'
+permalink: 'blog/docker-raspbian-no-available-network'
 ---
 
 I was excited to learn that Docker now officially supports rasbian on the Raspberry Pi 3.
