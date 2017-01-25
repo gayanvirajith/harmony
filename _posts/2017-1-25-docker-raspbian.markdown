@@ -35,7 +35,7 @@ Jan 24 23:47:13 cavepi systemd[1]: Unit docker.service entered failed state.
 ```
 
 After Googling around, I found several reports of similar (though not identical) errors, that had been traced back to openvpn having been running, at the time of install.  
-Indeed, I **did** have an openvpn server running at the time pf install, so I tried halting the openvpn server, uninstalling `docker-engine` (plus its dependencies) from my RPi, and kicking off the installer again:
+Indeed, I **did** have an openvpn server running at the time of install, so I tried halting the openvpn server, uninstalling `docker-engine` (plus its dependencies) from my RPi, and kicking off the installer again:
 
 ```
 sudo systemctl stop openvpn
