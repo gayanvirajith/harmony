@@ -21,12 +21,13 @@ check directory backup with path /media/PHILIPS/backups
   if timestamp > 24 hours then alert
 ```
 
-Unfortunately, I soon discovered that the `updated_at` timestamp was changing each day, even when the download from the remote server had failed. As you've probably guessed, the process of purging old backups each night (`Cron 2`) was causing the `updated_at` timestamp to increment each night.
+Unfortunately, I soon discovered that the `updated_at` timestamp was changing each day, even when the download from the remote server had failed. As you've probably guessed, the process of purging old backups each night (`Cron 2`) was causing the `updated_at` timestamp to increment.
 
 After realising that simply checking the `timestamp` attribute of the directory was insufficient, I searched for a way of verifying directory *contents*, instead.  
-I found that monit can shell out to an arbitrary program, and can determine success/failure based on the program's exit value or textual output. As such, I wrote a small Ruby class to scan a directory for recently created file(s), returning an exit code of 0 (success) if a new file had been found, or a code of 1 (error) if no new files were detected.
+I found that monit can shell out to an arbitrary program, and can determine success/failure based on the program's exit value or textual output.  
+I wrote a small Ruby script to scan a directory for recently created file(s), returning an exit code of 0 (success) if a new file is found, or a code of 1 (error) if no new files were detected.
 
-Here's the ruby class and modified monit rule that makes it all possible.
+Here's the ruby script and modified monit rule that makes it all possible.
 
 ```
 check program mindful_backup with path "/home/pi/new_file_checker.rb"
