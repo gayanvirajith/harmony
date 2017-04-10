@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Thoughts On The Sharing Economy"
+date:   2017-4-10 07:00:00
+permalink: 'blog/the-sharing-economy'
+---
+
