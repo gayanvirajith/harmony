@@ -46,7 +46,7 @@ Note: If you are a windows user please refer to this nice website - http://jekyl
 Harmony has some customizable options. All the configuration details are 
 configured in `_config.yml` file under root of the harmony directory. 
 
-Feel free to change your `name`, `descriptionn`, `meta_description`, `author details`,
+Feel free to change your `name`, `description`, `meta_description`, `author details`,
 `social media names` and `Google analytics id` accordingly. 
 
 ``` yml
