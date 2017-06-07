@@ -65,6 +65,9 @@ harmony:
   # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-xxxx-x
 
+  # Disqus name created to blog, leave blank to ignore
+  disqus_shortname:
+
   # Profile links, leave blank to ignore
   social: 
     github: gayanvirajith
