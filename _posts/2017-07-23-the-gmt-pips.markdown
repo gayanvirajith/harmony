@@ -5,9 +5,9 @@ date:   2017-7-23 16:00:00
 permalink: 'blog/the-gmt-pips'
 ---
 
-OK, you got me, I'm somewhat of a radio nerd. I'm so nerdy, in fact, that I decided I wanted "the gtm pips" to be audible in my mancave each hour. If you want the same, keep reading.  
+OK, you got me, I'm somewhat of a radio nerd. I'm so nerdy, in fact, that I decided I wanted "the gmt pips" to be audible in my mancave each hour. If you want the same, keep reading.  
 
-For the uninitiated, "the gmt pips" (or "the pips", for short) are the series of tones you hear (typically on BBC radio) in the few seconds leading up to "the top of the hour", often before the news. The pips used to feature heavily on UK broadcasts, but you don't hear them so much nowadays, which I find sad. During his 10 years at Radio 1, Chris Moyles used to time his 06:30am [Cheesy Song](https://www.youtube.com/watch?v=s_UL18EV6xY) and 10am hand-over link to coincide perfectly with the pips, which most people wouldn't appreciate (or even notice), but it always made me smile.
+For the uninitiated, "the gmt pips" ("the pips", for short) are the series of tones you hear (typically on BBC radio) in the few seconds leading up to "the top of the hour", often before the news. The pips used to feature heavily on UK broadcasts, but you don't hear them so much nowadays, which I find sad. During his 10 years at Radio 1, Chris Moyles used to time his 06:30am [Cheesy Song](https://www.youtube.com/watch?v=s_UL18EV6xY) and 10am hand-over link to coincide perfectly with the pips, which most people wouldn't appreciate (or even notice), but it always made me smile.
 
 So how can you go about generating the pips in your own home?  
 
