@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The GMT Pips At Home"
+title:  "Enjoying The GMT Pips At Home"
 date:   2017-7-23 16:00:00
 permalink: 'blog/the-gmt-pips'
 ---
