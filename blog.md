@@ -15,4 +15,5 @@ permalink: /blog/
   		{% endif %}
     <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
 {% endfor %}
+</ul>
 </div>
