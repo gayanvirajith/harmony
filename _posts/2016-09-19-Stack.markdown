@@ -1,0 +1,88 @@
+# Stack
+
+Stack(堆疊，中國稱作棧)，是一種抽象的資料結構，可以想像成是一種裝資料的容器，在Computer Science很常被提到與應用的，可以利用Array與Linked list來實作。
+
+
+## 簡介：Stack
+  Stack是一種特殊的ordered list，而這個List的Insert和Delete只能在同一邊進行，因此會有一個Last-In-First-Out (LIFO)的特性，也就是最晚被放進Stack的資料會最先被取出，最早被放進的資料則最晚被取出。
+  
+### 較嚴謹的定義  
+
+Given a stack S = ($a_{0}$, $a_{1}$ …, $a_{n}$), we say that $a_{0}$ is the bottom element, $a_{n-1}$ is the top element, and $a_{n}$ is on top of element $a_{n-1}$, where 0 < i < n.  
+ 
+生活中也有很多先進後出(LIFO)的例子，像是去吃迴轉壽司的時候，吃完的盤子會一個一個往上疊，但要拿去洗的時候就是從最上方的盤子開始洗；另外，搭電梯也是很好理解的例子，電梯的出口只有一個，所以最先進入電梯的會往內部站，後面進來的就會比較靠近門口，在出電梯時就會有先進後出的效果了。  
+  
+   
+![stack representation](https://www.tutorialspoint.com/data_structures_algorithms/images/stack_representation.jpg)  
+
+
+### Stack操作
+Stack一般會包含下面的幾項操作功能：因為它的重要性，所以Stack這個抽象的資料結構都在程式語言被實作出來，像是[ Java.util.Stack ](https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html)套件、 C++ 裡的 [ STL Stack ](www.cplusplus.com/reference/stack/stack)，所以我們充分了解操作功能後就可以很簡單的使用了。  
+
+* <font color="red">CreateS</font>：給定一大小，新建一個Stack的資料結構 
+
+	```
+	create an empty stack whose maximum size is maxStackSize
+	```
+
+* <font color="red">IsFull</font>：確認Stack是否已經滿了 
+	
+	```
+	if(number og elements in stack == maxStackSize)
+		return TRUE
+	else 
+		return FALSE
+	```
+* <font color="red">Push</font>：將資料放入Stack  
+
+	```
+	if(IsFull(stack))
+		stackFull  
+	else 
+		insert item into top of stack and return
+	```
+
+* <font color="red">IsEmpty</font>：確認Stack中還是否有資料 	 
+
+	```
+	if(stack == CreateS(maxStackSize))
+		return TRUE 
+	else 
+		return FALSE
+	```
+	
+* <font color="red">Pop</font>：將最上方的資料從Stack拿出  
+
+	```
+	if(IsEmpty(stack))
+		return  
+	else 
+		remove and return the element at the top of the stack
+	```
+	  
+* <font color="red"> Top </font>：回傳最上方的資料，但不從Stack拿出 
+ 
+	```
+	if(!IsEmpty(stack))
+		return  
+	else 
+		return the element at the top of the stack
+	```
+
+## 特性總結
+1. 一群相同性質元素的組合，即有序串列(Ordered List) 。  2. 具有LIFO(Last In First Out) 後進先出的特性。  3. 將一個項目放入堆疊的頂端，這個動作稱為Push(推入)。  4. 從堆疊頂端拿走一個項目，這個動作稱為Pop(彈出)。  5. Push/Pop的動作皆發生在同一端，則稱此端為Top(頂端)。  6. 要取出資料時，則只能從Top(頂端)取出，不能從中間取出資料。  
+
+## Stack應用
+
+* 回溯 (Backtracking)
+* 遞迴 (Recursion)
+* 深度優先搜尋 (Depth First Search, DFS)
+* Expression Representation (Conversion)
+
+
+##參考資料
+Data Structure and Algorithms - Stack
+https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm
+
+http://scanftree.com/Data_Structure/Introduction-of-stack
+ 
