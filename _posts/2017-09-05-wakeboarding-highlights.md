@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "FreeAgent Wakeboarding 05/09/2017"
+title:  "[YouTube] FreeAgent Wakeboarding 05/09/2017"
 date:   2017-9-5 12:00:00
 permalink: 'blog/wakeboarding-05-09-2017'
 ---
