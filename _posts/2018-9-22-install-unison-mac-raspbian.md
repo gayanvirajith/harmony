@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Installing Unison On Raspbian (Jessie) And Mac OS 10.11.6 (El Capitan)"
-date:   2018-9-22 15:00
+date:   2018-9-22 14:00
 permalink: 'blog/install-unison-mac-raspbian'
 ---
 
