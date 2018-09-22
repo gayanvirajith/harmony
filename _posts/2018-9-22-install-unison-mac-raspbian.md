@@ -13,13 +13,13 @@ Initially I installed the latest Unison binaries available through the system pa
 Received unexpected header from the server. Expected Unison X.XX but recived Unison Y.YY
 ```
 
-After realising that neither Homebrew nor APT had a common back-dated version of Unison in their repositories, I resorted to building the latest version of Unison from source. Unison is written in a language called [OCaml](https://ocaml.org/) and so, before you can successfully build Unison, OCaml needs to be installed on the host. Again, I used Homebrew and APT to install the latest available versions of OCaml, though immediately encountered errors when trying to build Unison, such as the below:
+After realising that neither Homebrew nor APT had a common back-dated version of Unison in their repositories, I resorted to building the latest version from source. Unison is written in a language called [OCaml](https://ocaml.org/) and so, before you can successfully build Unison, OCaml needs to be installed on the host. Again, I used Homebrew and APT to install the latest available versions of OCaml, though immediately encountered errors when trying to build Unison, such as the below:
 ```
 unison ocamlopt unknown option unsafe string
 This expression has type bytes but an expression was expected of type string with OCaml version 4.07.0. Happily, there 
 ```
 
-Eventually I discovered that, in order to build Unison correctly, you're best sticking with OCaml version 4.07.0. Happily, there's an OCaml package manager called opam, which makes it easy to install and switch between different versions of the OCaml language. Here are the command I ran to install OCaml 4.07.0 and then build Unison 2.5.1 on OS X (El Capitan) and Raspbian (Jessie). I imagine these commands would work on other variants of OS X and Debian, too.
+Eventually I discovered that, in order to build Unison correctly, you're best sticking with OCaml version 4.07.0. Happily, there's an OCaml package manager called opam, which makes it easy to install and switch between different versions of the OCaml language. Here are the commands I ran to install OCaml 4.07.0 and then build Unison 2.5.1 on OS X (El Capitan) and Raspbian (Jessie). I imagine these commands would work on other variants of OS X and Debian, too.
 
 OS X El Capitan Commands
 ```shell
