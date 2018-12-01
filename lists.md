@@ -30,6 +30,7 @@ permalink: /lists/
     <li><a href="https://www.youtube.com/channel/UCtinbF-Q-fVthA0qrFQTgXQ"> Casey Neistat </a></li>
     <li><a href="https://www.youtube.com/channel/UC5f5IV0Bf79YLp_p9nfInRA"> How Ridiculous </a></li>
     <li><a href="https://www.youtube.com/channel/UCJnih3sPUFF4BvAD08CMRJw"> Living Bobby </a></li>
+    <li><a href="https://www.youtube.com/user/PracProcrastination"> Yes Theory </a></li>
     <li><a href="https://www.youtube.com/channel/UCZaT_X_mc0BI-djXOlfhqWQ"> Vice News </a></li>
     <li><a href="https://www.youtube.com/channel/UCdPui8EYr_sX6q1xNXCRPXg"> STORROR </a></li>
   </ul>
