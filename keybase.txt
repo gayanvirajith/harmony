@@ -4,70 +4,49 @@ https://keybase.io/dvjones89
 
 I hereby claim:
 
-  * I am an admin of http://dvj.me.uk
+  * I am an admin of https://dvj.me.uk
   * I am dvjones89 (https://keybase.io/dvjones89) on keybase.
-  * I have a public key with fingerprint BDE8 3147 7F01 4476 47E1  8F5F 5413 79CF A66F 5F86
+  * I have a public key ASCFtsTnVaWw74vDNK_R3PL6240Gp5nuG3jMrWoJNCekVwo
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
 {
-    "body": {
-        "client": {
-            "name": "keybase.io node.js client",
-            "version": "0.7.3"
-        },
-        "key": {
-            "fingerprint": "bde831477f01447647e18f5f541379cfa66f5f86",
-            "host": "keybase.io",
-            "key_id": "541379CFA66F5F86",
-            "uid": "9f092cc1a860f47dac2be10ec7930300",
-            "username": "dvjones89"
-        },
-        "merkle_root": {
-            "ctime": 1420806398,
-            "hash": "27ed14bb039b27a3c6d8a69e331154b90f22ad6dc37bd51b1a533ec9ef0661d2260ad6e1614fe16cb2d10459cf87da8023b4e068ead4e160849cada8e693a9e4",
-            "seqno": 125896
-        },
-        "service": {
-            "hostname": "dvj.me.uk",
-            "protocol": "http:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "0101a39b9d0f03acb9ce7e69df26b0112dc274dbbee93e77243a46543ba52a0a01b40a",
+      "host": "keybase.io",
+      "kid": "012085b6c4e755a5b0ef8bc334afd1dcf2fadb8d06a799ee1b78ccad6a093427a4570a",
+      "uid": "9f092cc1a860f47dac2be10ec7930300",
+      "username": "dvjones89"
     },
-    "ctime": 1420806407,
-    "expire_in": 157680000,
-    "prev": "8929df0013238189b22beb31440b284aa5bd26ce8e42333d2f16a5623a5439f9",
-    "seqno": 9,
-    "tag": "signature"
+    "merkle_root": {
+      "ctime": 1564005315,
+      "hash": "c0ceb8a6b61ed1250042e2e83496f07c3f9d2ed335195a3c80f7a97259800f1a11c6292582ebf2198efff248ad6ba54fbd332350d6693ff652b507eecea461f1",
+      "hash_meta": "e4299a753943d9ec7171fe3c624f65f49ada076ccbf0cebda13e800cb81fec1f",
+      "seqno": 5846420
+    },
+    "service": {
+      "entropy": "+dKsffi2UjZuSHTES3z1cBPr",
+      "hostname": "dvj.me.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.2.0"
+  },
+  "ctime": 1564005335,
+  "expire_in": 504576000,
+  "prev": "43ff5f3857ad26d1b8dcf9d0fda92cdd6639745efa0a2e9dcf855e5b7f665609",
+  "seqno": 15,
+  "tag": "signature"
 }
 
-with the aforementioned key, yielding the PGP signature:
+which yields the signature:
 
------BEGIN PGP MESSAGE-----
-Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
-Comment: GPGTools - https://gpgtools.org
-
-owFVUm2IVUUYPrdM18XKipC0QA7Yj9yu83XmzFyXWlm4rRFktLGuhNeZM3Punt27
-59zOOffaZVnciMoVYQtRNhGzP4H5o6wfYkWUH6BUu0YoYZYtdYvaQrI1K7CaczPM
-+THMO+/zPvM87zsv3nyj1Z7rvaMx/VpUej730Q/S6n3j5IIRW0aqYRdGbK8S6DDN
-TqEY1nbBHtINKRKdD6LlYaR0fjBZfhXTYdd1nARRaFAg7+axPdqRwbNiPwjLOq7G
-QcZlS6UZhsR1fQAJcSlxNWS+4zsEYpd7vqDURIwayoEoSa971W5xlgJlbv/FdxfX
-UFp0ii18rZXgPuDI86BgFPjEVcJDUkOgPZdjgAHIgImOr1pS9cEo1AnjmeBhHQ9V
-dCmOopZrLw0yDCQIMEAxZ0aSSAZMFXK1gkRKgLlErsAeVUxQrjGG0CGSAx8hoajy
-sCuVAyUUDsba49oHlEKFEAUmrSGFxDe7J5GCgDjGPjOCGUBYEg0o00IRkweMcE+Y
-hKYcC66J8ZDop8LIiEMO43Q0i+N64OlMd9a3a/bywzpfGzIV1ThKIy+qmOuBNK0W
-Msdpo5rBNmtZSvSBFkNJBqEyI/v/TKGBXt8NAtwOWz9dDWJdCjKE41IGzMre0XXD
-yTjiygcAYoQZZKZRZg7SjJ4AiRgRwpEKUU8zTRDGWCEfUuFQhIVDMPf5NY/c6BRl
-Q5kE5VCktVjbo+O5u+dZuXZr/k03ZJ/Wal+4+L+f/HipzXqhOPfQ3NKeYO7w2MF7
-x07O5t86tHnRe1Pw8pInpibv6zt6ce3I9r8XkOabP98+u/rzo09OLfsQXRocfKyz
-q7Cip431TE9ueOZCY9EjtUNbNl66f+X+/Vbz2eK6mS3ra533TCZj8lVr32mbX8yt
-gq+/Px0/982ydcd+nTi+8+z2t9/dtqH//O7fzny79dQn1uLewzu+6+tfe+SlLvD9
-FdRXf7g5cfbPmS/6f1nywNCnbeN3fnxuV2fXqlse7N5UWX8Q9n21acXXt8noj1Pv
-7N167lGvcsDbW/5A9+zbU/rLne7eNnv5/JfW/J2fvXxmfI3cXZ56ZXLeT0vT32+9
-smuiuXDlXSd+LBw5fWFmx57m6n8A
-=6DOa
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEghbbE51WlsO+LwzSv0dzy+tuNBqeZ7ht4zK1qCTQnpFcKp3BheWxvYWTESpcCD8QgQ/9fOFetJtG43PnQ/aks3WY5dF76Ci6dz4VeW39mVgnEIFtt4+SHYBn3Vntx1mYZXU2d1iB0/T0nNh8/AB1IHYpnAgHCo3NpZ8RAJhTx8RQK3TGKnsiaZSkjktYnaG1I8LiV2kari9IeslD82jMHGuWlKHnEkJRH2rtshSquLDw91/PJgxEhaxbKCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMHQ6qh+yX/p+pEfH3u/ZsZcaU0nR6RRWRugB8BAiEQfo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
