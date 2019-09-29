@@ -3,6 +3,8 @@ layout: post
 title:  "Installing Capybara-WebKit On MacOS Mojave"
 date:   2019-9-28 22:00
 permalink: 'blog/install-capybara-webkit-mojave'
+excerpt: "Installing the capybara-webkit gem can be a nuisance. This post outlines the steps needed to install the `capybara-webkit` gem on a fresh copy of MacOS Mojave."
+featured-image: "capybara.jpg"
 ---
 
 I've recently upgraded to a Macbook Pro 2019 and need to setup my local development environment in MacOS Mojave. As a Ruby on Rails developer, there's a shortlist of Ruby gems that always seem to put a fight when I run `bundle install` and the `capybara-webkit` gem has proven to be one of the worst. This post outlines the steps needed to install the `capybara-webkit` gem on a fresh copy of MacOS Mojave (10.14.6), hopefully saving you an hour of Google searching.
