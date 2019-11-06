@@ -25,15 +25,6 @@ harmony:
   # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-xxxx-x
 
-  # Profile links, leave blank to ignore
-  social:
-    github: dvjones89
-    twitter: dvjones89
-    facebook:
-    gplus:
-    dribble:
-    pinterest:
-
 # Conversion / Build settings
 markdown:    kramdown
 highlighter: rouge
